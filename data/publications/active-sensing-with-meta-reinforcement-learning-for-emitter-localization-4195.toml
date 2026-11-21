@@ -1,0 +1,14 @@
+title = "Active Sensing with Meta-Reinforcement Learning for Emitter Localization from RF Observations"
+authors = ["M Shamail J Khan", "Nisha L Raichur", "Lucas Heublein", "Christian Wielenberg", "Alexander Mattick", "Tobias Feigl", "Christopher Mutschler", "Felix Ott"]
+date = "2026-10-15"
+venue = "16th International Conference on Indoor Positioning and Indoor Navigation (IPIN)"
+profiles = ["christopher-mutschler", "christian-wielenberg", "alexander-mattick"]
+pdf_url = "https://arxiv.org/pdf/2605.12569"
+
+[image]
+src = "/assets/media/publications/active-sensing-with-meta-reinforcement-learning-for-emitter-localization-4195.png"
+alt = ""
+width = 300
+height = 143
+sizes = "(max-width: 300px) 100vw, 300px"
+class = "attachment-medium size-medium"

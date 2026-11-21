@@ -1,0 +1,28 @@
+title = "IALE: Imitating Active Learner Ensembles"
+authors = ["Christoffer Löffler", "Christopher Mutschler"]
+date = "2022-01-01"
+venue = "Journal of Machine Learning Research (JMLR)"
+profiles = ["christopher-mutschler"]
+abstract = "We propose IALE, an imitation learning scheme that imitates the selection of the best-performing expert heuristic at each stage of the learning cycle in a batch-mode pool-based setting. We use Dagger to train a transferable policy on a dataset and later apply it to different datasets and deep classifier architectures. The policy reflects on the best choices from multiple expert heuristics given the current state of the active learning process, and learns to select samples in a complementary way that unifies the expert strategies. Our experiments on well-known image datasets show that we outperform state of the art imitation learners and heuristics."
+bibtex = '''
+@article{JMLR:v23:21-0387,
+  author  = {Christoffer LÃ¶ffler and Christopher Mutschler},
+  title   = {IALE: Imitating Active Learner Ensembles},
+  journal = {Journal of Machine Learning Research},
+  year    = {2022},
+  volume  = {23},
+  number  = {107},
+  pages   = {1--29},
+  url     = {http://jmlr.org/papers/v23/21-0387.html}
+}'''
+
+[links]
+Website = "https://www.jmlr.org/papers/v23/21-0387.html"
+
+[image]
+src = "/assets/media/publications/iale-imitating-active-learner-ensembles-3858.png"
+alt = ""
+width = 300
+height = 76
+sizes = "(max-width: 300px) 100vw, 300px"
+class = "attachment-medium size-medium"

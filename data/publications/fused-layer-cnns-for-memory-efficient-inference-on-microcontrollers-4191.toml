@@ -1,0 +1,26 @@
+title = "Fused-Layer CNNs for Memory-Efficient Inference on Microcontrollers"
+authors = ["Mark Deutel", "Frank Hannig", "Christopher Mutschler", "Jürgen Teich"]
+date = "2024-01-01"
+venue = "Workshop on Machine Learning and Compression @NeurIPS 2024"
+profiles = ["christopher-mutschler"]
+pdf_url = "https://openreview.net/pdf?id=2O8qbyxH6X"
+bibtex = '''
+@inproceedings{
+deutel2024fusedlayer,
+title={Fused-Layer {CNN}s for Memory-Efficient Inference on Microcontrollers},
+author={Mark Deutel and Frank Hannig and Christopher Mutschler and J{\"u}rgen Teich},
+booktitle={Workshop on Machine Learning and Compression, NeurIPS 2024},
+year={2024},
+url={https://openreview.net/forum?id=2O8qbyxH6X}
+}'''
+
+[links]
+Website = "https://openreview.net/forum?id=2O8qbyxH6X"
+
+[image]
+src = "/assets/media/publications/fused-layer-cnns-for-memory-efficient-inference-on-microcontrollers-4191.png"
+alt = ""
+width = 300
+height = 71
+sizes = "(max-width: 300px) 100vw, 300px"
+class = "attachment-medium size-medium"

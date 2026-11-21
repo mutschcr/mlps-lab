@@ -1,0 +1,34 @@
+/* Directory */
+.team-columns { grid-template-columns: repeat(2, minmax(0, 1fr)); }
+.team-lead { grid-template-columns: minmax(0, 1fr); }
+.team-members, .team-affiliates {
+  --card-width: 12rem;
+  grid-template-columns: repeat(auto-fill, minmax(min(var(--card-width), 100%), 1fr));
+  container-type: inline-size;
+}
+.team-affiliates { --card-width: 13rem; }
+.team-column, .team-card { grid-column: span 1; grid-row: span 1; }
+@container (max-width: 24.5rem) {
+  .team-card { grid-column: auto; grid-row: auto; }
+}
+
+/* Every profile uses a portrait column and a biography with right-aligned social links. */
+.profile-intro {
+  display: flex;
+  align-items: stretch;
+  gap: 2em;
+  margin-bottom: 1.75em;
+}
+.profile-intro > .column {
+  min-width: 0;
+  flex-grow: 0;
+  margin: 0;
+}
+.profile-intro .profile-social {
+  display: flex;
+  justify-content: flex-end;
+}
+@media (max-width: 781px) {
+  .profile-intro { flex-direction: column; }
+  .profile-intro > .column { flex-basis: auto !important; }
+}

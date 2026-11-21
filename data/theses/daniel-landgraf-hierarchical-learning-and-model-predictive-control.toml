@@ -1,0 +1,34 @@
+detail_slug = "hierarchical-learning-and-model-predictive-control-daniel-landgraf-fau-erlangen-nurnberg-2021"
+supervisors = ["Andreas Völz", "Knut Graichen", "Georgios Kontes", "Christopher Mutschler"]
+title = "Hierarchical Learning and Model Predictive Control"
+type = "Master Thesis"
+status = "finished"
+tags = []
+student = "Daniel Landgraf"
+institution = "FAU Erlangen-Nürnberg"
+finished = "2020"
+summary = "Recent progress in (deep) learning algorithms has shown great potential to learn complex tasks purely from large numbers of samples or interactions with the environment.…"
+
+body_html = '''
+<p>Recent progress in (deep) learning algorithms has shown great potential to learn complex tasks purely from large numbers of samples or interactions with the environment. However, performing such interactions can be difficult if sub-optimal control strategies can lead to serious damages. Therefore, the interactions are often performed in simulation environments instead of using the real system. On the other hand, using recent advances in model predictive control, such methods can be applied to control highly complex nonlinear systems in real-time. However, these approaches are difficult to use if the optimization problem is non-convex and exhibits multiple local minima that correspond to fundamentally different solutions. Therefore, it is of interest to combine modern predictive control methods with learning algorithms to solve such problems.</p>
+
+<h4 class="wp-block-heading">Task definition</h4>
+
+<p>In a collaboration between the Chair of Automatic Control and the Machine Learning and Information Fusion Group of Fraunhofer IIS, research is performed into possible combinations of reinforcement learning and real-time nonlinear model predictive control. The goal of this thesis is to use a learning algorithm at the higher level and a model predictive controller at the lower level to solve a collision avoidance problem for an autonomous vehicle. Here, the controller is responsible for dealing with the nonlinear dynamics of the vehicle, while the learning strategy should solve the decision making problem, e.g. whether to avoid the obstacle on the left or right side or perform an emergency braking.</p>
+<p>Requirements: Basic knowledge of control theory and model predictive control, programming experience in MATLAB, C and Python of advantage.</p>
+<p><strong>Supervisors:</strong></p>
+<ul>
+<li>Dr.-Ing. Andreas Völz (Chair of Automatic Control Friedrich-Alexander-Universität)</li>
+<li>Prof. Dr.-Ing. Knut Graichen (Chair of Automatic Control Friedrich-Alexander-Universität)</li>
+<li>Dr. Georgios Kontes (IIS)</li>
+<li>Dr.-Ing. Christopher Mutschler (IIS)</li>
+</ul>
+<p>See also the description at the <a href="https://www.rt.tf.fau.de/files/2019/11/Kontes2019_Hierarchical_Learning_and_MPC.pdf">Chair of Automatic Control @ FAU</a> </p>
+
+<h4 class="wp-block-heading">References</h4>
+
+<ol>
+<li>P. L. Bacon et al., The option-critic architecture. In AAAI Conference on Artificial Intelligence.</li>
+<li>Tingwu Wang et al., Benchmarking Model-Based Reinforcement Learning, arXiv:1907.02057.</li>
+</ol>
+'''

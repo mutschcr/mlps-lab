@@ -1,0 +1,38 @@
+detail_slug = "meta-reinforcement-learning-for-optimization-of-electric-circuit-parameters"
+supervisors = ["Sebastian Rietsch", "Georg Kruse", "Christopher Mutschler"]
+filename_owner = "Sebastian Rietsch"
+finished = ""
+title = "Meta Reinforcement Learning for Optimization of Electric Circuit Parameters"
+type = "Master Thesis"
+status = "finished"
+tags = ["Reinforcement Learning"]
+summary = "The design and optimization of electric circuits is currently still an experience driven approach. Especially in the case of resonant systems, the strong non-linear system…"
+
+body_html = '''
+<p style="text-align: justify;">The design and optimization of electric circuits is currently still an experience driven approach. Especially in the case of resonant systems, the strong non-linear system behavior requires a lot of optimization loops during the design process to maximize power transfer and efficiency. A simple example of the above systems is the boost converter. Recently, methods using genetic algorithms (GAs) like NSGA2 [1] have demonstrated the potential for optimizing and tuning such circuits [2]. They are, however, limited by the fact that newly discovered (optimal) parameters for one electric circuit are hardly – if even at all – transferable to other circuits. One would therefore have to solve each electric circuit problem individually. At the same time, circuit optimization methods based on Reinforcement Learning (RL) like L2DC [3] have emerged, which show similar potential, but also do not solve the transfer problem directly. They are also prone to not converge to satisfying solutions.</p>
+<p style="text-align: justify;">Meta Learning, or learning-to-learn, instead of solving a task from scratch, aims to improve the learning algorithm itself based on past learning experience [4]. Applied in the domain of RL (also known as Meta RL), it promises better task performance as well as the potential to alleviate the computational burden of training task-related agents. In the domain of circuit optimization, this idea has yet to be investigated thoroughly.</p>
+<p style="text-align: justify;">Current RL agents fail to optimize varying electric circuits. In this master thesis, the potential of integrating Meta Learning strategies into state-of-the-art RL approaches is to be investigated. Since it is difficult and time consuming to train RL agents on simulated electric circuits, the first goal of the thesis is to develop a suitable abstraction of the optimization problem described above and implement it as a Markov Decision Process (MDP) solvable by RL. The second goal is to identify and apply a Meta RL approach which is capable of solving this newly formulated optimization problem. These strategies can range from learning from a distribution of tasks [5] to meta learning the cumulative reward of the RL agent [6]. The master student can freely choose which category of strategies to follow.</p>
+<p style="text-align: justify;">In order to empirically gain insight on the advantages of the Meta Learning approaches, the Meta RL agent is to be benchmarked against classical optimization algorithms like stochastic<br>gradient descent as well as basic RL agents.</p>
+<p><strong>Required Skills:</strong></p>
+<ul>
+<li>Basic knowledge of reinforcement learning and machine learning</li>
+<li>Python</li>
+<li style="list-style-type: none;">
+<ul>
+<li style="list-style-type: none;"> </li>
+</ul>
+</li>
+</ul>
+<p><strong>Supervisors:</strong> <a href="mailto:sebastian.rietsch@iis.fraunhofer.de">Sebastian Rietsch</a>, <a href="mailto:georg.kruse@iisb.fraunhofer.de">Georg Kruse</a>, <a href="mailto:christopher.mutschler@iis.fraunhofer.de">Christopher Mutschler</a></p>
+
+<h4 class="wp-block-heading">References</h4>
+
+<ol>
+<li>https://www.tandfonline.com/doi/abs/10.1163/156939308784160703</li>
+<li>https://ieeexplore.ieee.org/document/8450100</li>
+<li>https://arxiv.org/pdf/1812.02734.pdf</li>
+<li>https://arxiv.org/pdf/2004.05439.pdf</li>
+<li>https://arxiv.org/pdf/1703.03400.pdf</li>
+<li>https://arxiv.org/pdf/1805.09801.pdf.</li>
+</ol>
+'''

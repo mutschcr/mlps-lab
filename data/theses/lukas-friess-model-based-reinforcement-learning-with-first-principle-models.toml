@@ -1,0 +1,39 @@
+detail_slug = "2021-model-based-reinforcement-learning-with-first-principle-models-lukas-fries-fau-erlangen-nurnberg"
+supervisors = ["Andreas Völz", "Knut Graichen", "Georgios Kontes", "Christopher Mutschler"]
+title = "Model-based Reinforcement Learning with First-Principle Models"
+type = "Master Thesis"
+status = "finished"
+tags = ["Reinforcement Learning"]
+student = "Lukas Frieß"
+institution = "FAU Erlangen-Nürnberg"
+finished = "2021"
+summary = "Reinforcement learning (RL) is increasingly used in robotics to learn complex tasks from repeated interactions with the environment. For example, a mobile robot can learn to…"
+
+body_html = '''
+<div class="layoutArea">
+<div class="column">
+<p><strong>Motivation</strong></p>
+</div>
+</div>
+<div class="layoutArea">
+<div class="column">
+<p>Reinforcement learning (RL) is increasingly used in robotics to learn complex tasks from repeated interactions with the environment. For example, a mobile robot can learn to avoid an obstacle by testing a large number of randomized motion strategies. The success is measured by a reward function that should be maximized in the course of the iterations. Algorithms for reinforcement learning are commonly divided in model-free and model-based approaches, where the former ones directly learn a policy and the latter ones use the interactions to build a model. In contrast, a model predictive controller solves a dynamic optimization problem in each time step to determine the optimal control strategy. Although reinforcement learning and model predictive control can be used to solve the same tasks, the two approaches are rarely compared directly.</p>
+<p><strong>Task definition</strong></p>
+<p>In a collaboration between the Chair of Automatic Control and the Machine Learning and Information Fusion Group of Fraunhofer IIS, research is performed into possible combinations of reinforcement learning and real-time nonlinear model predictive control. The goal of this master thesis is to implement a model-based reinforcement learning algorithm using methodologies commonly used in model predictive control for dynamical systems such as, for example, adjoint- based sensitivity analysis. In order to compare the approach to existing algorithms, one of the examples in the freely available benchmark suite by Tingu Wang et al. can be used.</p>
+<p><strong>Requirements: </strong>Basic knowledge of control theory and model predictive control, programming experience in MATLAB, C and Python of advantage.</p>
+<p><strong>Supervisors:</strong></p>
+<ul>
+<li>Dr.-Ing. <a href="mailto:andreas.voelz@fau.de">Andreas Völz</a> (Chair of Automatic Control Friedrich-Alexander-Universität)</li>
+<li>Prof. Dr.-Ing. <a href="mailto:knut.graichen@fau.de">Knut Graichen</a> (Chair of Automatic Control Friedrich-Alexander-Universität)</li>
+<li><span style="font-size: inherit; font-family: inherit;">Dr. <a href="mailto:georgios.kontes@iis.fraunhofer.de">Georgios Kontes</a> (IIS)</span></li>
+<li>
+<span style="font-size: inherit; font-family: inherit;">Dr.-Ing. </span><a href="mailto:christopher.mutschler@iis.fraunhofer.de">Christopher Mutschler</a> (IIS)</li>
+</ul>
+<p>See also the description at the <a href="https://www.rt.tf.fau.de/files/2019/11/Kontes2019_Model-Based_Reinforcement_Learning.pdf">Chair of Automatic Control @ FAU</a></p>
+<p><strong>References</strong></p>
+<ol>
+<li>Tingwu Wang et al., Benchmarking Model-Based Reinforcement Learning, arXiv:1907.02057</li>
+</ol>
+</div>
+</div>
+'''

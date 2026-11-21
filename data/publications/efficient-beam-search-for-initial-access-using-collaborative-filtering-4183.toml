@@ -1,0 +1,29 @@
+title = "Efficient beam search for initial access using collaborative filtering"
+authors = ["George Yammine", "Georgios Kontes", "Norbert Franke", "Axel Plinge", "Christopher Mutschler"]
+date = "2023-01-01"
+venue = "2023 IEEE Wireless Communications and Networking Conference (WCNC)"
+profiles = ["christopher-mutschler"]
+pdf_url = "https://ieeexplore.ieee.org/stamp/stamp.jsp?tp=&arnumber=10119028"
+doi = "https://doi.org/10.1109/WCNC55385.2023.10119028"
+bibtex = '''
+@INPROCEEDINGS{10119028,
+  author={Yammine, George and Kontes, Georgios and Franke, Norbert and Plinge, Axel and Mutschler, Christopher},
+  booktitle={2023 IEEE Wireless Communications and Networking Conference (WCNC)}, 
+  title={Efficient Beam Search for Initial Access Using Collaborative Filtering}, 
+  year={2023},
+  volume={},
+  number={},
+  pages={1-6},
+  keywords={Training;Simulation;Clustering algorithms;Training data;Search problems;Robustness;Task analysis},
+  doi={10.1109/WCNC55385.2023.10119028}}'''
+
+[links]
+Website = "https://ieeexplore.ieee.org/abstract/document/10119028"
+
+[image]
+src = "/assets/media/publications/efficient-beam-search-for-initial-access-using-collaborative-filtering-4183.png"
+alt = ""
+width = 300
+height = 240
+sizes = "(max-width: 300px) 100vw, 300px"
+class = "attachment-medium size-medium"

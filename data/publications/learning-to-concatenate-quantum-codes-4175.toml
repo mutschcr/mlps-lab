@@ -1,0 +1,14 @@
+title = "Learning to Concatenate Quantum Codes"
+authors = ["Nico Meyer", "Christopher Mutschler", "Dominik Seuß", "Andreas Maier", "Daniel D Scherer"]
+date = "2026-01-01"
+venue = "2026 IEEE International Conference on Quantum Computing and Engineering (QCE 2026)"
+profiles = []
+pdf_url = "https://arxiv.org/pdf/2604.14931"
+
+[image]
+src = "/assets/media/publications/learning-to-concatenate-quantum-codes-4175.png"
+alt = ""
+width = 300
+height = 132
+sizes = "(max-width: 300px) 100vw, 300px"
+class = "attachment-medium size-medium"

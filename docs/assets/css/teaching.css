@@ -1,0 +1,112 @@
+.content-table {
+  overflow-x:auto;
+}
+
+.content-table table {
+  border-collapse:collapse;
+  width:100%;
+}
+
+.content-table thead {
+  border-bottom:3px solid;
+}
+
+.content-table td,
+.content-table th {
+  border:1px solid;
+  padding:.5em;
+}
+
+.content-table .has-fixed-layout {
+  table-layout:fixed;
+  width:100%;
+}
+
+.content-table .has-fixed-layout td,
+.content-table .has-fixed-layout th {
+  word-break:break-word;
+}
+
+.content-table.aligncenter {
+  display:table;
+  width:auto;
+}
+
+.content-table.aligncenter td,
+.content-table.aligncenter th {
+  word-break:break-word;
+}
+
+.content-table.is-style-stripes {
+  background-color:transparent;
+  border-collapse:inherit;
+  border-spacing:0;
+}
+
+.content-table.is-style-stripes tbody tr:nth-child(odd) {
+  background-color:#f0f0f0;
+}
+
+.content-table.is-style-stripes td,
+.content-table.is-style-stripes th {
+  border-color:transparent;
+}
+
+.content-table.is-style-stripes {
+  border-bottom:1px solid #f0f0f0;
+}
+
+.content-table table[style*=border-top-color] tr:first-child,
+.content-table table[style*=border-top-color] tr:first-child td,
+.content-table table[style*=border-top-color] tr:first-child th,
+.content-table table[style*=border-top-color]>*,
+.content-table table[style*=border-top-color]>* td,
+.content-table table[style*=border-top-color]>* th {
+  border-top-color:inherit;
+}
+
+.content-table table[style*=border-top-color] tr:not(:first-child) {
+  border-top-color:currentColor;
+}
+
+.content-table table[style*=border-right-color] td:last-child,
+.content-table table[style*=border-right-color] th,
+.content-table table[style*=border-right-color] tr,
+.content-table table[style*=border-right-color]>* {
+  border-right-color:inherit;
+}
+
+.content-table table[style*=border-bottom-color] tr:last-child,
+.content-table table[style*=border-bottom-color] tr:last-child td,
+.content-table table[style*=border-bottom-color] tr:last-child th,
+.content-table table[style*=border-bottom-color]>*,
+.content-table table[style*=border-bottom-color]>* td,
+.content-table table[style*=border-bottom-color]>* th {
+  border-bottom-color:inherit;
+}
+
+.content-table table[style*=border-bottom-color] tr:not(:last-child) {
+  border-bottom-color:currentColor;
+}
+
+.content-table table[style*=border-left-color] td:first-child,
+.content-table table[style*=border-left-color] th,
+.content-table table[style*=border-left-color] tr,
+.content-table table[style*=border-left-color]>* {
+  border-left-color:inherit;
+}
+
+.content-table table[style*=border-style] td,
+.content-table table[style*=border-style] th,
+.content-table table[style*=border-style] tr,
+.content-table table[style*=border-style]>* {
+  border-style:inherit;
+}
+
+.content-table table[style*=border-width] td,
+.content-table table[style*=border-width] th,
+.content-table table[style*=border-width] tr,
+.content-table table[style*=border-width]>* {
+  border-style:inherit;
+  border-width:inherit;
+}

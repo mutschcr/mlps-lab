@@ -1,0 +1,13 @@
+detail_slug = "2022-analyzing-the-effect-of-design-choices-in-model-based-reinforcement-learning-lars-ulrich-fau-erlangen-nurnberg"
+supervisors = []
+title = "Analyzing the Effect of Design Choices in Model-based Reinforcement Learning"
+type = "Master Thesis"
+status = "finished"
+tags = ["Reinforcement Learning"]
+student = "Lars Ulrich"
+institution = "FAU Erlangen-Nürnberg"
+finished = "2022"
+
+body_html = '''
+
+'''

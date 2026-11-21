@@ -1,0 +1,30 @@
+title = "Reinforcement Learning for Node Selection in Branch-and-Bound"
+authors = ["Alexander Mattick", "Christopher Mutschler"]
+date = "2024-01-01"
+venue = "Transactions on Machine Learning Research (TMLR)"
+profiles = ["alexander-mattick", "christopher-mutschler"]
+abstract = '''
+We train a graph neural network that produces a probability distribution based on the path from the model's root to its ``to-be-selected'' leaves. Representing node-selection as a probability distribution allows us to train a decision-making policy using state-of-the-art RL techniques that capture both intrinsic node-quality and node-evaluation costs.
+Our method induces a high quality node selection policy on a set of varied and complex problem sets, despite only being trained on specially designed, synthetic travelling salesmen problem (TSP) instances.'''
+bibtex = '''
+@article{
+mattick2024reinforcement,
+title={Reinforcement Learning for Node Selection in Branch-and-Bound},
+author={Alexander Julian Mattick and Christopher Mutschler},
+journal={Transactions on Machine Learning Research},
+issn={2835-8856},
+year={2024},
+url={https://openreview.net/forum?id=VrWl6yNk1E},
+note={}
+}'''
+
+[links]
+Website = "https://openreview.net/forum?id=VrWl6yNk1E"
+
+[image]
+src = "/assets/media/publications/reinforcement-learning-for-node-selection-in-branch-and-bound-3835.png"
+alt = ""
+width = 300
+height = 60
+sizes = "(max-width: 300px) 100vw, 300px"
+class = "attachment-medium size-medium"

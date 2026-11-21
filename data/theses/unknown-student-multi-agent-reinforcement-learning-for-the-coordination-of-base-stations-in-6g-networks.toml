@@ -1,0 +1,39 @@
+detail_slug = "master-thesis-multi-agent-reinforcement-learning-for-the-coordination-of-base-stations-in-6g-networks"
+supervisors = []
+filename_owner = "Unknown Student"
+finished = ""
+title = "Multi-Agent Reinforcement Learning for the Coordination of Base Stations in 6G Networks"
+type = "Master Thesis"
+status = "finished"
+tags = ["Reinforcement Learning", "5G & 6G"]
+summary = "6G technology is promising to fundamentally change how consumers and businesses communicate, based on its envisioned speed and flexibility. This flexibility stems from the…"
+
+body_html = '''
+<p style="text-align: justify;">6G technology is promising to fundamentally change how consumers and businesses communicate, based on its envisioned speed and flexibility. This flexibility stems from the complex interplay between large-scale ecosystems of software and hardware network components and renders classical theoretical approaches unable to seamlessly scale to the massive problem size [1]. Reinforcement learning [2] can provide a viable approach to alleviate part of this complexity in key components of the network.</p>
+<p style="text-align: justify;">One of the most fundamental and complex functionalities is user equipment (UE) tracking [3]. Here, the assumption is that more than one base stations (BSs) can serve a UE with (hybrid) beamforming. To this end, a decision needs to be made on which BS and with which beam (from a large codebook of say 50 beams) should serve the UE.</p>
+<p style="text-align: justify;">More concretely, in our case we have a setting of 5 serving BSs and 1 UE, where each agent (BS) has local and limited information about only the channel measurements between the UE and the beam selected to serve the it. The BSs need to coordinate to support two distinct tasks: i) positioning, where connection with 3 or more BSs is required, since the system goal is to determine the exact position of the UE in a 2D plane; and ii) reliable communication, where the determination of a single BS/beam with the best QoS is typical. In the former task, the beams with the shortest direct path to the UE (determined by CIR processing) from the three most suitable BSs need to be selected, while in the latter, the beam with the highest SINR from a single BS must be determined.</p>
+<p style="text-align: justify;">Classical approaches solve this problem by tuning the parameters of a pre-defined hand-over management logic [4], but rely on knowledge of the UE position, environment geometry and communication with perfect channels between all BSs to achieve it.</p>
+<p style="text-align: justify;"><br>In this Thesis, multi-agent reinforcement learning (MARL) [5] algorithms will be adopted to solve this problem, satisfying the two contradicting requirements: i) minimize unnecessary, frequent (re-)assignments of the UE to different BSs; and ii) minimize the signaling overhead for the BS coordination. The solution will be based on the centralized training with decentralized execution (CDTE) paradigm [6], where during training a centralized critic has access to all measurements from the environment (so all BSs communicate with each other), but during deployment each agent (BS) makes decisions based on the channel measurements between the BS and the UE.</p>
+<p style="text-align: justify;">Finally, the resulting performance will be compared against a model-free RL algorithm (e.g. Proximal Policy Optimization algorithm [7]) with full access to the state of the environment (assuming full communication between the BSs) and a fully decentralized RL setting where each agent (e.g. a recurrent DQN [8]) trains independently with local information only.</p>
+<p style="text-align: justify;">The proposed work consists of the following parts:</p>
+<ul>
+<li style="text-align: justify;">Literature review on suitable MARL algorithms (1 month)</li>
+<li style="text-align: justify;">Implementation of fully centralized baseline solutions (1 month)</li>
+<li style="text-align: justify;">Implementation of the decentralized MARL algorithms (2 month)</li>
+<li style="text-align: justify;">Experimental evaluation and comparison (1 month)</li>
+<li style="text-align: justify;">Writing of thesis (1 month).</li>
+</ul>
+
+<h3 class="wp-block-heading">References</h3>
+
+<ol>
+<li>ON THE ROAD TO 6G: DRIVERS, CHALLENGES AND ENABLING TECHNOLOGIES – A Fraunhofer 6G Whitepaper</li>
+<li><span style="font-size: 1rem;">Sutton, R. S., &amp; Barto, A. G. (2018). Reinforcement learning: An introduction. MIT press.</span></li>
+<li><span style="font-size: 1rem;">Giordani, M., Polese, M., Roy, A., Castor, D., &amp; Zorzi, M. (2018). A tutorial on beam management for 3GPP NR at mmWave frequencies. IEEE Communications Surveys &amp; Tutorials, 21(1), 173-196.</span></li>
+<li><span style="font-size: 1rem;">Mollel, M. S., Abubakar, A. I., Ozturk, M., Kaijage, S. F., Kisangiri, M., Hussain, S., … &amp; Abbasi, Q. H. (2021). A survey of machine learning applications to handover management in 5G and beyond. IEEE Access, 9, 45770-45802.</span></li>
+<li><span style="font-size: 1rem;">Feriani, A., &amp; Hossain, E. (2021). Single and multi-agent deep reinforcement learning for AI-enabled wireless networks: A tutorial. IEEE Communications Surveys &amp; Tutorials.</span></li>
+<li><span style="font-size: 1rem;">Foerster, J., Farquhar, G., Afouras, T., Nardelli, N., &amp; Whiteson, S. (2018, April). Counterfactual multi-agent policy gradients. In Proceedings of the AAAI conference on artificial intelligence (Vol. 32, No. 1).</span></li>
+<li><span style="font-size: 1rem;">Schulman, J., Wolski, F., Dhariwal, P., Radford, A., &amp; Klimov, O. (2017). Proximal policy optimization algorithms. arXiv preprint arXiv:1707.06347.</span></li>
+<li><span style="font-size: 1rem;">Hausknecht, M., &amp; Stone, P. (2015, September). Deep recurrent q-learning for partially observable mdps. In 2015 aaai fall symposium series.</span></li>
+</ol>
+'''

@@ -1,0 +1,22 @@
+document.addEventListener("click", event => {
+  const link = event.target.closest("a[data-news-photo]");
+  if (!link || event.ctrlKey || event.metaKey || event.shiftKey || event.altKey) return;
+  const dialog = document.createElement("dialog");
+  if (!dialog.showModal) return;
+  event.preventDefault();
+  dialog.className = "news-lightbox";
+  dialog.setAttribute("aria-label", "Enlarged image");
+  const image = new Image();
+  image.src = link.href;
+  image.alt = link.querySelector("img").alt;
+  const close = document.createElement("button");
+  close.type = "button";
+  close.textContent = "×";
+  close.setAttribute("aria-label", "Close enlarged image");
+  close.addEventListener("click", () => dialog.close());
+  dialog.addEventListener("click", e => { if (e.target === dialog) dialog.close(); });
+  dialog.addEventListener("close", () => { dialog.remove(); link.focus(); }, {once: true});
+  dialog.append(image, close);
+  document.body.append(dialog);
+  dialog.showModal();
+});

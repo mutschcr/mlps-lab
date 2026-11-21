@@ -1,0 +1,91 @@
+detail_slug = "stephan-geisler-designing-and-training-foundation-models-for-positioning-applications-fau-erlangen-nurnberg-2024"
+supervisors = ["Christopher Mutschler", "Alexander Mattick", "Björn Eskofier"]
+title = "Designing and training foundation models for positioning applications"
+type = "Master Thesis"
+status = "finished"
+tags = ["Positioning"]
+student = "Stephan Geisler"
+institution = "FAU Erlangen-Nürnberg"
+finished = "2024"
+summary = "Foundation models (like OpenAI’s GPT-4/ChatGPT [1] or Meta’s Llama 2 [2]) have been a disruptive technology that within just few months has started to transform the modus…"
+
+body_html = '''
+<p class="wp-block-paragraph">Foundation models (like OpenAI’s GPT-4/ChatGPT [1] or Meta’s Llama 2 [2]) have been a disruptive technology that within just few months has started to transform the modus operandi of several industries. There have been already notable applications on tax/legal [3], public health [4] and computer code generation [5] domains, among others.</p>
+
+<p class="wp-block-paragraph">Despite their undeniable success, these models – even after being fine-tuned – are not a “one size fits them all” solution, as there are use cases (such as the positioning applications addressed in this Thesis [6]) that require a different line of thought. Here, an ideal solution/algorithm would inherently support multiple tasks during deployment, without the necessity of specialized fine-tuning:</p>
+
+<ol class="wp-block-list">
+<li>predict the current position of a user equipment (UE, e.g., a cell phone)</li>
+
+<li>given the current UE track, generate potential future positions (i.e., generate plausible future UE tracks)</li>
+
+<li>given a sequence of positions, generate the expected measurements (pure generative model)</li>
+
+<li>Given a UE track with measurements but with missing ground truth labels (true positions), infer the most probable sequence of positions for the missing parts</li>
+
+<li>given measurements and position predictions from positioning system X, provide an estimate on the achieved positioning accuracy of the system. </li>
+</ol>
+
+<p class="wp-block-paragraph">Even though notable efforts in the direction of semi-supervised learning/generative modeling for positioning systems exist [7], [8], a unified approach that can address all the above points is yet to be reported. </p>
+
+<p class="wp-block-paragraph">In the present Thesis, we take a radical approach and formulate the given positioning problem as an offline reinforcement learning (RL) setting that falls under the partially observable Markov decision process (POMDP) class [9]. Interestingly, in this setting, we can utilize novel approaches that suggest utilization of foundation models for the robust training of multi-task, offline RL agents [10], as a starting point. Here, the state space of the POMDP contains relevant information and measurements (e.g., LOS/NLOS conditions, coarse initial position, (compressed) channel input response (CIR) information, movement type, etc.) while actions and rewards are the predicted positions and the positioning error of the system respectively.</p>
+
+<p class="wp-block-paragraph">Our main hypothesis, that needs to be verified by the Thesis, is that by moving further from the “passive” positioning approach that relies on estimation theory towards a more “active” approach that treats the problem as a sequential decision making one, we can devise an algorithm (or a family of algorithms) that enables multi-task-aware training and addresses all five points/tasks of the ideal solution defined above.</p>
+
+<p class="wp-block-paragraph">For the training and evaluation of the algorithm, data from a specific area under different static (geometry) and dynamic (e.g., reflection properties, movement of UEs and obstacles, etc.) will be generated using QuaDRiGa [11]. The successful completion of the Thesis would demonstrate the efficiency of the developed algorithm in all different tasks defined above, under various UE/obstacle movement patterns and environment geometries. </p>
+
+<p class="wp-block-paragraph">The proposed work consists of the following parts:</p>
+
+<ul class="wp-block-list">
+<li>Literature review on sequence-based offline RL algorithms (1 month)</li>
+
+<li>Selection of proper/meaningful inputs for the model/algorithm and definition of training/test scenarios for all tasks to be addressed (1 month)</li>
+
+<li>Data generation for the training/evaluations and implementation of the equivalent OpenAI Gym/Gymnasium environments (0.5 months)</li>
+
+<li>Design of an experimental protocol for evaluating the effect of the different model parameters/properties (0.5 months)</li>
+
+<li>Experimental evaluation (2 months)</li>
+
+<li>Writing of thesis (1 month)</li>
+</ul>
+
+<p class="wp-block-paragraph">The thesis must contain a detailed description of all developed and used algorithms as well as a profound result evaluation and discussion. The implemented code must be documented and provided. </p>
+
+<p class="wp-block-paragraph"><strong>Advisors:</strong>       Dr.-Ing Christopher Mutschler (Fraunhofer IIS), Alexander Mattick (Fraunhofer IIS), Prof. Dr. Björn Eskofier (FAU)</p>
+
+<p class="wp-block-paragraph"><strong>Student:</strong>         Stephan Geisler</p>
+
+<p class="wp-block-paragraph"><strong>Start—End:</strong>    01.05.2024 – 31.10.2024</p>
+
+<h1 class="wp-block-heading">References<a></a>
+</h1>
+
+<ul class="wp-block-list">
+<li>
+<a>OpenAI (2023).</a> GPT-4 Technical Report. arXiv preprint arXiv: 2303.08774</li>
+
+<li><a>Touvron, H., Martin, L., Stone, K., Albert, P., Almahairi, A., Babaei, Y., … &amp; Scialom, T. (2023). Llama 2: Open foundation and fine-tuned chat models. arXiv preprint arXiv:2307.09288.</a></li>
+
+<li><a>Nay, J. J., Karamardian, D., Lawsky, S. B., Tao, W., Bhat, M., Jain, R., … &amp; Kasai, J. (2023). Large Language Models as Tax Attorneys: A Case Study in Legal Capabilities Emergence. arXiv preprint arXiv:2306.07075.</a></li>
+
+<li><a>Biswas, S. S. (2023). Role of chat gpt in public health. Annals of biomedical engineering, 51(5), 868-869.</a></li>
+
+<li><a>Rozière, B., Gehring, J., Gloeckle, F., Sootla, S., Gat, I., Tan, X. E., … &amp; Synnaeve, G. (2023). Code Llama: Open Foundation Models for Code. arXiv preprint arXiv:2308.12950.</a></li>
+
+<li><a>Corici, M. et al. (2022) Next-generation positioning within 6G: A Fraunhofer 6G white paper</a></li>
+
+<li><a>Studer, C., Medjkouh, S., Gonultaş, E., Goldstein, T., &amp; Tirkkonen, O. (2018). Channel charting: Locating users within the radio environment using channel state information. IEEE Access, 6, 47682-47698.</a></li>
+
+<li><a>Stahlke, M., Yammine, G., Feigl, T., Eskofier, B. M., &amp; Mutschler, C. (2023). Indoor localization with robust global channel charting: A time-distance-based approach. IEEE Transactions on Machine Learning in Communications and Networking.</a></li>
+
+<li><a>Kaelbling, L. P., Littman, M. L., &amp; Cassandra, A. R. (1998). Planning and acting in partially observable stochastic domains. Artificial intelligence, 101(1-2), 99-134.</a></li>
+</ul>
+
+<ul class="wp-block-list">
+<li>
+<a>Chen, L., Lu, K., Rajeswaran, A., Lee, K., Grover, A., Laskin, M., … </a>&amp; Mordatch, I. (2021). Decision transformer: Reinforcement learning via sequence modeling. Advances in neural information processing systems, 34, 15084-15097.</li>
+
+<li><a>Jaeckel, S., Raschkowski, L., Börner, K., &amp; Thiele, L. (2014). QuaDRiGa: A 3-D multi-cell channel model with time evolution for enabling virtual field trials. IEEE transactions on antennas and propagation, 62(6), 3242-3256.</a></li>
+</ul>
+'''

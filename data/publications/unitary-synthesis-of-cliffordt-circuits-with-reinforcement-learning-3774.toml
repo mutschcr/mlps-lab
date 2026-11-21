@@ -1,0 +1,29 @@
+title = "Unitary Synthesis of Clifford+T Circuits with Reinforcement Learning"
+authors = ["Sebastian Rietsch", "Abhishek Y Dubey", "Christian Ufrecht", "Maniraman Periyasamy", "Axel Plinge", "Christopher Mutschler", "Daniel D Scherer"]
+date = "2024-01-01"
+venue = "2024 IEEE International Conference on Quantum Computing and Engineering (QCE)"
+profiles = ["christopher-mutschler"]
+doi = "https://doi.org/10.1109/QCE60285.2024.00102"
+abstract = "In this study, we apply the tree-search method Gumbel AlphaZero to solve the problem for a subset of exactly synthesizable Clifford+T unitaries. Our method effectively synthesizes circuits for up to five qubits generated from randomized circuits with up to 60 gates, outperforming existing tools like QuantumCircuitOpt and MIN-T-SYNTH in terms of synthesis time for larger qubit counts. Furthermore, it surpasses Synthetiq in successfully synthesizing random, exactly synthesizable unitaries. These results establish a strong baseline for future unitary synthesis algorithms."
+bibtex = '''
+@INPROCEEDINGS{10821409,
+  author={Rietsch, Sebastian and Dubey, Abhishek Y. and Ufrecht, Christian and Periyasamy, Maniraman and Plinge, Axel and Mutschler, Christopher and Scherer, Daniel D.},
+  booktitle={2024 IEEE International Conference on Quantum Computing and Engineering (QCE)}, 
+  title={Unitary Synthesis of Clifford+T Circuits with Reinforcement Learning}, 
+  year={2024},
+  volume={01},
+  number={},
+  pages={824-835},
+  keywords={Training;Hands;Runtime;Costs;Qubit;Logic gates;Deep reinforcement learning;Inference algorithms;Quantum circuit;Time complexity;Unitary synthesis;Reinforcement learning;MCTS;AlphaZero},
+  doi={10.1109/QCE60285.2024.00102}}'''
+
+[links]
+Website = "https://ieeexplore.ieee.org/abstract/document/10821409"
+
+[image]
+src = "/assets/media/publications/unitary-synthesis-of-cliffordt-circuits-with-reinforcement-learning-3774.png"
+alt = ""
+width = 300
+height = 201
+sizes = "(max-width: 300px) 100vw, 300px"
+class = "attachment-medium size-medium"

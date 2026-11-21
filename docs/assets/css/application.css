@@ -1,0 +1,108 @@
+.accordion {
+  box-sizing:border-box;
+}
+
+.accordion-item.is-open>.accordion-heading .accordion-heading__toggle-icon {
+  transform:rotate(45deg);
+}
+
+@media (prefers-reduced-motion:no-preference) {
+.accordion-item {
+  transition:grid-template-rows .3s ease-out;
+}
+
+.accordion-item>.accordion-heading .accordion-heading__toggle-icon {
+  transition:transform .2s ease-in-out;
+}
+}
+
+.accordion-heading__toggle {
+  align-items:center;
+  background:none;
+  border:none;
+  color:inherit;
+  cursor:pointer;
+  display:flex;
+  font-family:inherit;
+  font-size:inherit;
+  font-style:inherit;
+  font-weight:inherit;
+  letter-spacing:inherit;
+  line-height:inherit;
+  overflow:hidden;
+  padding:var(--wp--preset--spacing--20,1em) 0;
+  text-align:inherit;
+  text-decoration:inherit;
+  text-transform:inherit;
+  width:100%;
+  word-spacing:inherit;
+}
+
+.accordion-heading__toggle:not(:focus-visible) {
+  outline:none;
+}
+
+.accordion-heading__toggle:hover .accordion-heading__toggle-title {
+  text-decoration:underline;
+}
+
+.accordion-heading__toggle-title {
+  flex:1;
+}
+
+.accordion-heading__toggle-icon {
+  align-items:center;
+  display:flex;
+  height:1.2em;
+  justify-content:center;
+  width:1.2em;
+}
+
+.accordion-panel[hidden] {
+  border:none!important;
+  box-shadow:none!important;
+  margin-block-start:0;
+  padding:0!important;
+}
+
+.wp-block-details {
+  box-sizing:border-box;
+}
+
+.wp-block-details summary {
+  cursor:pointer;
+}
+
+.application-guidelines .entry-content {
+  max-width: none;
+}
+
+.application-guidelines .accordion-item {
+  border-bottom: 1px solid #d6d9dc;
+  margin-block: 0;
+  padding-block: 0;
+}
+
+.application-guidelines .accordion-heading,
+.application-guidelines .accordion + .accordion {
+  margin-block: 0;
+}
+
+.application-guidelines .accordion-heading__toggle[aria-expanded="false"] {
+  min-height: 44px;
+  padding-block: .25rem;
+}
+
+.application-guidelines details {
+  border-bottom: 1px solid #d6d9dc;
+  margin-block: 1rem;
+  padding-block: .75rem;
+}
+
+.application-guidelines .accordion-heading__toggle,
+.application-guidelines summary {
+  color: var(--mlps-accent);
+  font: inherit;
+  font-weight: 600;
+  cursor: pointer;
+}

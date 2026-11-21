@@ -1,0 +1,34 @@
+{
+  "/team/christopher-mutschler/": {
+    "profile": "christopher-mutschler",
+    "per_page": 25
+  },
+  "/publications/": {
+    "per_page": 15,
+    "top_pager": true
+  },
+  "/team/jonas-pirkl/": {
+    "profile": "jonas-pirkl",
+    "per_page": 25
+  },
+  "/team/jonathan-ott/": {
+    "profile": "jonathan-ott",
+    "per_page": 25
+  },
+  "/team/alexander-mattick/": {
+    "profile": "alexander-mattick",
+    "per_page": 25
+  },
+  "/team/nico-meyer/": {
+    "profile": "nico-meyer",
+    "per_page": 25
+  },
+  "/team/mark-deutel/": {
+    "profile": "mark-deutel",
+    "per_page": 25
+  },
+  "/team/christian-wielenberg/": {
+    "profile": "christian-wielenberg",
+    "per_page": 25
+  }
+}

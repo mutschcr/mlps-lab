@@ -1,0 +1,40 @@
+detail_slug = "diffussion_for_wireless_masterthesis"
+supervisors = ["Jonathan Ott", "Christopher Mutschler"]
+filename_owner = "Jonathan Ott"
+title = "Physics Aligned Diffusion Models for Wireless Channels"
+type = "Master Thesis"
+status = "open"
+tags = ["5G & 6G", "Wireless Sensing"]
+posted = "2026-11-08"
+summary = "Physics-aligned diffusion models can be used to generate realistic wireless channel data while preserving relevant physical properties."
+image = "../assets/media/2026/09/Neon-Gehirn-im-Funknetzwerk.png"
+
+body_html = '''
+<p style="text-align: justify;"></p>
+<p>Modern wireless systems increasingly use radio signals not only for communication, but also for sensing, localization, and positioning. In these applications, the wireless channel contains rich information about the surrounding environment, including user position, geometry, propagation paths, and interactions with objects. It has been shown that self-supervised representation learning methods can generate highly expressive representations from this data, improving the state-of-the-art for the downstream tasks such as wireless sensing and positioning without requiring costly labels (Ott, 2024).</p>
+<p>Incorporating domain-specific knowledge into self-supervised learning procedures is a promising approach for improving both efficiency and robustness. By constraining the learning process to physically plausible solutions, prior knowledge can effectively reduce the search space and guide optimization toward more meaningful representations and favorable local optima. This can improve sample efficiency, stabilize training, and enhance generalization, particularly in scenarios where available data are limited or where the deployment environment differs from the training conditions (Ott, 2025).</p>
+<p>Diffusion models have recently emerged as powerful generative models and representation-learning frameworks. Their iterative denoising process provides a flexible mechanism for modeling complex, high-dimensional data distributions. More recently, these concepts have also been transferred to the wireless domain, where diffusion-based methods are being explored for modulation classification and wireless technology classification (Liu, 2025). However, more complex regression tasks remain unexplored.</p>
+<p>The goal of this thesis is to investigate diffusion models as representation learners for wireless channel data, with a particular focus on sensing and positioning applications. A central research question is how domain-specific and physical knowledge about wireless channels can be incorporated into the diffusion process in order to obtain representations that are more informative, robust, and capable of generalizing to previously unseen environments or propagation conditions.</p>
+<p>Possible directions include adapting the forward or reverse diffusion processes to the statistical and physical properties of wireless channels, incorporating propagation models or channel structure into the network architecture or training objective, and designing physics-informed conditioning or regularization mechanisms. The learned representations can subsequently be evaluated on downstream tasks such as localization, positioning, environment recognition, or other wireless sensing applications.</p>
+<p><strong>Required Skills:</strong></p>
+<p></p>
+<ul>
+<li>Python</li>
+<li>Knowledge of machine learning and self-supervised learning</li>
+<li>Basic knowledge about signal processing</li>
+<li>Optional: Knowledge of wireless systems</li>
+</ul>
+<p><strong>Supervisors:</strong> <a href="mailto:jonathan.ott@utn.de">Jonathan Ott</a>, <a href="mailto:christopher.mutschler@iis.fraunhofer.de">Christopher Mutschler</a></p>
+
+<h4 class="wp-block-heading">References</h4>
+
+<p></p>
+<ol>
+<li>Ott, J., Pirkl, J., Stahlke, M., Feigl, T., &amp; Mutschler, C. (2024). Radio Foundation Models: Pre-training Transformers for 5G-based Indoor Localization. <em>2024 14th International Conference on Indoor Positioning and Indoor Navigation (IPIN)</em>, 1–6. <a class="external-link" href="https://doi.org/10.1109/IPIN62893.2024.10786154" target="_blank" rel="noopener nofollow">https://doi.org/10.1109/IPIN62893.2024.10786154</a>
+</li>
+<li>Ott, J., Stahlke, M., Feigl, T., Eskofier, B. M., &amp; Mutschler, C. (2025). <em>Simplicity is Key: An Unsupervised Pretraining Approach for Sparse Radio Channels</em> (arXiv:2505.13055). arXiv. <a class="external-link" href="https://doi.org/10.48550/arXiv.2505.13055" target="_blank" rel="noopener nofollow">https://doi.org/10.48550/arXiv.2505.13055</a>
+</li>
+<li>Liu, Y., Wang, J., Wang, H., &amp; Shi, C. (2025, October 8). <em>TS-DDAE: A Novel Temporal-Spectral Denoising Diffusion AutoEncoder for Wireless Signal Recognition Model Pre-training</em>. The Fourteenth International Conference on Learning Representations. <a class="external-link" href="https://openreview.net/forum?id=RKDkqkkZ5m" target="_blank" rel="noopener nofollow">https://openreview.net/forum?id=RKDkqkkZ5m</a>
+</li>
+</ol>
+'''

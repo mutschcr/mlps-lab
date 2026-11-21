@@ -1,0 +1,53 @@
+detail_slug = "yongxu-ren-variational-quantum-compiling-with-deep-reinforcement-learning"
+supervisors = []
+title = "Variational Quantum Compiling with (Deep) Reinforcement Learning"
+type = "Master Thesis"
+status = "finished"
+tags = ["Reinforcement Learning", "Quantum Computing"]
+student = "Yongxu Ren"
+institution = "FAU Erlangen-Nürnberg"
+finished = "2023"
+summary = "MotivationQuantum computing promises to revolutionize many areas that are hard or impossible to approach with tra- ditional computers. However, due to rigid hardware…"
+
+body_html = '''
+<p style="text-align: justify;"><strong>Motivation</strong><br>Quantum computing promises to revolutionize many areas that are hard or impossible to approach with tra- ditional computers. However, due to rigid hardware restrictions and noise sensitivity of currently available hardware, the success of near-term quantum applications heavily depends on the availability of quantum compilers that eﬀiciently translate a high-level quantum algorithm into hardware-level operations. Unfortunately, even though different quantum compilation methods exist [1, 2], predominantly founded on the Solovay-Kiteav theorem, many of them can be characterized by high execution and pre-compilation times that limit their applicability for online compilation.</p>
+<p style="text-align: justify;">Reinforcement learning (RL) is a field of machine learning that has attracted much attention in recent literature. Besides somewhat singular domains like playing games [3], RL has proven victorious in solving problems like chip design [4] and neural architecture search [5]. Recently, RL methods have emerged that target the quantum compiling problem, ranging from model-free (deep) RL [6, 7] approaches to tree-search or MCTS methods [8]. Unfortunately, the compilation of variational quantum circuits (VQCs), a particular variety of parametrized quantum circuits with broad applications, has received much less attention in recent literature [8, 9]. Furthermore, the proposed methods primarily leverage RL training as a static circuit optimization routine of specific target unitaries or circuit ansätze. However, due to the immense runtime complexity and instability of the RL training, this prohibits their use in an online deployment setting and questions their usefulness in general. For completeness, there also exist non-RL approaches to this problem [10, 11].</p>
+
+<p style="text-align: justify;"><strong>Overall goal</strong><br>The key idea of this work is to examine how RL can be used to enhance the quantum compilation of VQCs. More specifically, the student will build on the prior work of He et al. [9], which the authors demonstrated to be applicable across many circuit ansätze, but has its limitations, as mentioned in the last paragraph. After familiarizing himself with quantum computing theory and relevant circuit compilation literature, the student will investigate and reproduce the results of [9] on a simple compilation problem (class) in the first step, which he will define in consultation with his supervisor. For example, target unitaries sampled from unitary t-designs or realistic quantum-circuit datasets might be feasible problem candidates. Besides algorithmic implementation work, the initial step requires extending an OpenAI Gym environment [11] to the variational quantum compilation problem built on Qiskit [12].</p>
+<p style="text-align: justify;">Based on the working base implementation, the student will investigate ways VQC compilation can be improved. Because ultimately, the wish is to find generalizing solutions that do not require retraining for every target unitary or variational ansatz, a promising step is to move from tabular RL (Double Q-Learning in the case of [9]) toward deep RL methods. The student will test and compare different state-of-the-art deep RL methods for the compilation task and compare them to the tabular results. Because MDP design choices are crucial for the success of RL approaches, this step involves integrating and comparing different state and action spaces and reward function setups as discovered in the literature or designed by the student himself. This step should also consider different native gate sets, predefined multi-gate templates, and qubit connectivity of the underlying (simulated) hardware. Another promising (but optional) avenue is to find ways to intelligently install the gate parameter optimization routine into the RL framework.</p>
+<p style="text-align: justify;">The results from the initial explorative phase should be refined in the next and final step. To make the results more comparable and informative, the student should find optimal hyperparameters to yield final method performance and an ablation study w.r.t to important method components. Here, a vital design choice is the deep neural network architecture of the actor (and critic) network(s), which can range from simple feed-forward networks over CNNs to neural graph networks and should be part of the investigation.<br><br></p>
+
+<p class="wp-block-paragraph"></p>
+
+<p><strong>Timetable (6 months, in 24 person weeks [PW])</strong></p>
+<ul>
+<li>3 PW Familiarization with relevant work in the subject areas and literature.</li>
+<li>5 PW Implementation and evaluation of state-of-the-art variational quantum compilation algorithm [9] and adaptation of an RL training environment.</li>
+<li>7 PW Exploration of deep RL and MDP design choices to improve the variational quantum compilation on (simulated) quantum hardware. An optional working direction includes the improvement of the variational parameter routine.</li>
+<li>3 PW Refinement of the method w.r.t hyperparameters and investigation of different neural network architectures.</li>
+<li>6 PW Writing of the final transcript.</li>
+</ul>
+<div class="page" title="Page 2">
+<div class="layoutArea">
+<div class="column">
+<p><strong>Literature</strong></p>
+<ol>
+<li>Zhiyenbayev, Y., Akulin, V. M., &amp; Mandilara, A. (2018). Quantum compiling with diffusive sets of gates. Physical Review A, 98(1), 012325.</li>
+<li>Dawson, C. M., &amp; Nielsen, M. A. (2005). The solovay-kitaev algorithm. arXiv preprint quant-ph/0505030.</li>
+<li>Schrittwieser, J., Antonoglou, I., Hubert, T., Simonyan, K., Sifre, L., Schmitt, S., … &amp; Silver, D. (2020). Mastering atari, go, chess and shogi by planning with a learned model. Nature, 588(7839), 604-609.</li>
+<li>Mirhoseini, A., Goldie, A., Yazgan, M., Jiang, J., Songhori, E., Wang, S., … &amp; Dean, J. (2020). Chip placement with deep reinforcement learning. arXiv preprint arXiv:2004.10746.</li>
+<li>Zoph, B., &amp; Le, Q. V. (2016). Neural architecture search with reinforcement learning. arXiv preprint arXiv:1611.01578.</li>
+<li>Chen, Q., Du, Y., Zhao, Q., Jiao, Y., Lu, X., &amp; Wu, X. (2022). Eﬀicient and practical quantum compiler towards multi-qubit systems with deep reinforcement learning. arXiv preprint arXiv:2204.06904.</li>
+<li>Moro, L., Paris, M. G., Restelli, M., &amp; Prati, E. (2021). Quantum compiling by deep reinforcement learning. Communications Physics, 4(1), 1-8.</li>
+<li>Wang, P. Y., Usman, M., Parampalli, U., Hollenberg, L. C., &amp; Myers, C. R. (2022). Automated Quantum Circuit Design with Nested Monte Carlo Tree Search. arXiv preprint arXiv:2207.00132.</li>
+<li>He, Z., Li, L., Zheng, S., Li, Y., &amp; Situ, H. (2021). Variational quantum compiling with double Q- learning. New Journal of Physics, 23(3), 033002.</li>
+<li>Khatri, S., LaRose, R., Poremba, A., Cincio, L., Sornborger, A. T., &amp; Coles, P. J. (2019). Quantum- assisted quantum compiling. Quantum, 3, 140.</li>
+<li>Sharma, K., Khatri, S., Cerezo, M., &amp; Coles, P. J. (2020). Noise resilience of variational quantum compiling. New Journal of Physics, 22(4), 043006.</li>
+<li>https://github.com/openai/gym</li>
+<li>https://qiskit.org/</li>
+<li>Kuo, E. J., Fang, Y. L. L., &amp; Chen, S. Y. C. (2021). Quantum architecture search via deep reinforcement learning. arXiv preprint arXiv:2104.07715.</li>
+</ol>
+</div>
+</div>
+</div>
+'''

@@ -1,0 +1,80 @@
+detail_slug = "alexander-mattick-beam-tracking-as-a-time-varying-reinforcement-learning-problem"
+supervisors = []
+finished = ""
+title = "Beam Tracking as a Time-Varying Reinforcement Learning Problem"
+type = "Project"
+status = "finished"
+tags = ["Reinforcement Learning", "5G & 6G"]
+student = "Alexander Mattick"
+summary = "The envisioned transition to 5G and 6G technologies have started to transform the properties of established communication networks. In the core of this transformation lies…"
+
+body_html = '''
+<p>The envisioned transition to 5G and 6G technologies have started to transform the properties of established communication networks. In the core of this transformation lies the capability of Base Stations (BSs) to utilize directional beams for transmission towards User Equipment (UE) served by the network. Here, a (large) library of pre-determined directional beams (called the codebook) is available, and the question is which beam needs to serve a specific UE at any point in time.</p>
+
+<p>Of course, this problem becomes more complicated when the UEs are moving in given trajectories, in which case the BS needs to decide in real-time which beam needs to be used for tracking the UE – a problem called Beam Tracking [1]. Several solutions have been proposed to this problem, stemming from supervised learning to reinforcement learning (RL) [2]. The inherent difficulty here is that the environment is not stationary, meaning that the UE follows a trajectory that cannot be affected by any decision the agent takes – no matter which beam we select to serve the UE, it will not affect its direction of movement. </p>
+
+<p>In RL literature the non-stationarity problem has been approached by multi-task learning approaches [3], where each environment variation is considered a different task, continual RL [4] where the agent continues to learn in the current environment variation without forgetting how to solve previous environments, and meta-RL [5] where a policy able to perform relatively well in a large selection of environment variations is used as an initial policy for adapting to the given environment “snapshot.” A notably different approach is taken in [6], where an explicit environment (variation) detector and an exploration scheme per-environment are envisioned, while a different policy for each newly detected environment variation is defined. </p>
+
+<p>The Masters Project will consist of formulating the beam tracking functionality as an RL problem under a time-varying/non-stationary environment and implementing an approach similar to [6] as an evaluation baseline on a Beam Tracking scenario defined within 6G SENTINEL research project.</p>
+
+<p><strong>References</strong></p>
+
+<ol type="1">
+<li>Giordani, M., Polese, M., Roy, A., Castor, D., &amp; Zorzi, M. (2018). A tutorial on beam management for 3GPP NR at mmWave frequencies. IEEE Communications Surveys &amp; Tutorials, 21(1), 173-196.</li>
+<li>Sutton, R. S., &amp; Barto, A. G. (2018). Reinforcement learning: An introduction. MIT press.</li>
+<li>Tanaka, F., &amp; Yamamura, M. (2003, July). Multitask reinforcement learning on the distribution of MDPs. In Proceedings 2003 IEEE International Symposium on Computational Intelligence in Robotics and Automation. Computational Intelligence in Robotics and Automation for the New Millennium (Cat. No. 03EX694) (Vol. 3, pp. 1108-1113). IEEE.</li>
+<li>Khetarpal, K., Riemer, M., Rish, I., &amp; Precup, D. (2020). Towards continual reinforcement learning: A review and perspectives. arXiv preprint arXiv:2012.13490.</li>
+<li>Finn, C., Abbeel, P., &amp; Levine, S. (2017, July). Model-agnostic meta-learning for fast adaptation of deep networks. In International conference on machine learning (pp. 1126-1135). PMLR.</li>
+<li>Hamadanian, P., Schwarzkopf, M., Sen, S., &amp; Alizadeh, M. (2022). Reinforcement Learning in Time-Varying Systems: an Empirical Study. arXiv preprint arXiv:2201.05560.</li>
+</ol>
+
+<p><strong>Main contact at the department: </strong><a href="mailto:christopher.mutschler@iis.fraunhofer.de">Dr.-Ing. Christopher Mutschler</a></p>
+
+<p><strong>External point of contact: </strong><a href="mailto:georgios.kontes@iis.fraunhofer.de">Dr. Georgios Kontes</a> (Self-Learning Systems Group, Fraunhofer IIS, Nuremberg)</p>
+
+<p><strong>Work Packages</strong></p>
+
+<figure class="content-table"><table><tbody>
+<tr>
+<td>
+<strong>WP</strong><strong></strong>
+</td>
+<td>
+<strong>Description</strong><strong></strong>
+</td>
+</tr>
+<tr>
+<td><strong>WP1</strong></td>
+<td>
+<strong>Literature review: </strong>In the beginning of the project, familiarization with the relevant literature and solution approaches in non-stationary environments will be performed.</td>
+</tr>
+<tr>
+<td><strong>WP2</strong></td>
+<td>
+<strong>Beam Tracking as non-stationary RL environment:</strong> The Beam Tracking problem will be transformed to an equivalent RL problem with non-stationary environment. Here, a direction would be to define the quality of each beam in the codebook as the equivalent of a grid-world environment [2] and as the UE moves assume that the dynamics of the environment change, and the goal position of the grid (best beam in codebook) shifts to another cell. </td>
+</tr>
+<tr>
+<td><strong>WP3</strong></td>
+<td>
+<strong>Implementation: </strong>Application of the defined algorithms for the Beam Tracking problem. Here, the simulator and already available OpenAI Gym environment from 6G SENTINEL project will be utilized. The most suitable policy type (FFN or CNN with or without frame stacking vs LSTM) as well as environment detection algorithm will be determined and properly tuned.</td>
+</tr>
+<tr>
+<td><strong>WP4</strong></td>
+<td>
+<strong>Evaluation: </strong>The tuned algorithms will be evaluated in different UE trajectories. A systematic analysis will indicate the performance of the proposed method over widely used model-free RL and supervised learning algorithms. </td>
+</tr>
+<tr>
+<td><strong>WP5</strong></td>
+<td>
+<strong>Documentation: </strong>The implementation details and assumptions will be clearly documented alongside the delivered pytorch code. A comprehensive usage manual should also accompany the code. Finally, a documentation of the entire work in a paper-style report, as well as in a final presentation will be delivered.</td>
+</tr>
+</tbody></table></figure>
+
+<p><strong>Formal Criteria</strong></p>
+
+<ul>
+<li>Code (including documentation)</li>
+<li>Report in the form of a paper</li>
+<li>Final presentation</li>
+</ul>
+'''
