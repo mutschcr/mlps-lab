@@ -1,6 +1,6 @@
 detail_slug = "abhinav-singh-safe-imitation-learning-for-beam-tracking"
-supervisors = []
-finished = ""
+supervisors = ["Georgios Kontes", "Christopher Mutschler"]
+finished = "2023"
 title = "Safe Imitation Learning for Beam Tracking"
 type = "Project"
 status = "finished"

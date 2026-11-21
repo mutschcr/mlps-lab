@@ -1,6 +1,6 @@
 detail_slug = "michael-girstl-safe-reinforcement-learning-using-successor-representations"
 supervisors = ["Alexander Mattick", "Christopher Mutschler", "Björn Eskofier"]
-finished = ""
+finished = "2025"
 title = "Safe Reinforcement learning using Successor representations"
 type = "Project"
 status = "finished"
