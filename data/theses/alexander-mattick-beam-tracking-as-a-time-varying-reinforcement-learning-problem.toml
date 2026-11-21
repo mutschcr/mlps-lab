@@ -1,6 +1,6 @@
 detail_slug = "alexander-mattick-beam-tracking-as-a-time-varying-reinforcement-learning-problem"
-supervisors = []
-finished = ""
+supervisors = ["Georgios Kontes", "Christopher Mutschler"]
+finished = "2023"
 title = "Beam Tracking as a Time-Varying Reinforcement Learning Problem"
 type = "Project"
 status = "finished"

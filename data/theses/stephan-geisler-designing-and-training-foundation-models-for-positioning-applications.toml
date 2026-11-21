@@ -1,5 +1,5 @@
 detail_slug = "stephan-geisler-designing-and-training-foundation-models-for-positioning-applications-fau-erlangen-nurnberg-2024"
-supervisors = ["Christopher Mutschler", "Alexander Mattick", "Björn Eskofier"]
+supervisors = ["Georgios Kontes", "Christopher Mutschler"]
 title = "Designing and training foundation models for positioning applications"
 type = "Master Thesis"
 status = "finished"

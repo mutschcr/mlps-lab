@@ -1,5 +1,5 @@
 detail_slug = "yongxu-ren-variational-quantum-compiling-with-deep-reinforcement-learning"
-supervisors = []
+supervisors = ["Sebastian Rietsch", "Christopher Mutschler"]
 title = "Variational Quantum Compiling with (Deep) Reinforcement Learning"
 type = "Master Thesis"
 status = "finished"

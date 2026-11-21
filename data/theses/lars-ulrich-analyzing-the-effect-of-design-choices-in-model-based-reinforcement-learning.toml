@@ -1,5 +1,5 @@
 detail_slug = "2022-analyzing-the-effect-of-design-choices-in-model-based-reinforcement-learning-lars-ulrich-fau-erlangen-nurnberg"
-supervisors = []
+supervisors = ["Georgios Kontes", "Christopher Mutschler"]
 title = "Analyzing the Effect of Design Choices in Model-based Reinforcement Learning"
 type = "Master Thesis"
 status = "finished"

@@ -19,6 +19,7 @@ def filename(name, title):
 
 
 def read_topic(path):
+    print("Processing " + str(path))
     with path.open("rb") as stream:
         t = tomllib.load(stream)
     slug = path.stem

@@ -4,7 +4,7 @@ finished = "2023"
 title = "Safe Imitation Learning for Beam Tracking"
 type = "Project"
 status = "finished"
-tags = ["5G & 6G"]
+tags = ["5G & 6G", "Reinforcement Learning"]
 student = "Abhinav Singh"
 summary = "The envisioned transition to 5G and 6G technologies have started to transform the properties of established communication networks. In the core of this transformation lies…"
 

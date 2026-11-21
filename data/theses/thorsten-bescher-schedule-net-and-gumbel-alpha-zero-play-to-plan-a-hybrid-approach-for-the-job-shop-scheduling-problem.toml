@@ -1,5 +1,5 @@
 detail_slug = "thorsten-bescher-schedule-net-and-gumbel-alpha-zero-play-to-plan-a-hybrid-approach-for-the-job-shop-scheduling-problem-fau-erlangen-nurnberg-2024"
-supervisors = ["Christopher Mutschler", "Quirin Göttl", "Björn Eskofier"]
+supervisors = ["Quirin Göttl", "Christopher Mutschler"]
 title = "Schedule-Net and Gumbel-Alpha-Zero Play-to-Plan: a Hybrid Approach for the Job-Shop Scheduling Problem"
 type = "Master Thesis"
 status = "finished"

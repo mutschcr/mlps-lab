@@ -1,5 +1,5 @@
 detail_slug = "2021-towards-interpretable-and-robust-reinforcement-learning-policies-through-local-lopschitzness-and-randomization-hyeyoung-park-lmu-munchen-consulting-project"
-supervisors = []
+supervisors = ["Christopher Mutschler"]
 title = "Towards Interpretable (and Robust) Reinforcement Learning Policies through Local Lipschitzness and Randomization"
 type = "Project"
 status = "finished"

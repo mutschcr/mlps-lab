@@ -1,5 +1,5 @@
 detail_slug = "alexander-mattick-reinforcement-learning-for-node-selection-in-branch-and-bound"
-supervisors = []
+supervisors = ["Christopher Mutschler"]
 title = "Reinforcement Learning for Node Selection in Branch-and-Bound"
 type = "Master Thesis"
 status = "finished"

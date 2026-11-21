@@ -1,5 +1,5 @@
 detail_slug = "haris-asif-quantum-circuit-optimization-via-hierarchical-reinforcement-learning-fau-erlangen-nurnberg-2024"
-supervisors = ["Christopher Mutschler", "Quirin Göttl", "Maniraman Periyasamy", "Björn Eskofier"]
+supervisors = ["Quirin Göttl", "Maniraman Periyasamy", "Christopher Mutschler"]
 title = "Quantum Circuit Optimization via Hierarchical Reinforcement Learning"
 type = "Master Thesis"
 status = "finished"

@@ -1,9 +1,9 @@
 detail_slug = "2022-interpretable-decision-tree-extraction-using-imitation-learning-and-locally-adaptive-optimization-hyeyoung-park-lmu-munchen"
-supervisors = []
+supervisors = ["Christopher Mutschler"]
 title = "Interpretable Decision Tree Extraction using Imitation Learning and Locally Adaptive Optimization"
 type = "Project"
 status = "finished"
-tags = []
+tags = ["Reinforcement Learning"]
 student = "Hyeyoung Park"
 institution = "LMU München"
 finished = "2022"

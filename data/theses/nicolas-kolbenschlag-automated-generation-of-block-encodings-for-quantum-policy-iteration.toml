@@ -1,5 +1,5 @@
 detail_slug = "nicolas-kolbenschlag-automated-generation-of-block-encodings-for-quantum-policy-iteration-fau-erlangen-nurnberg-2024"
-supervisors = []
+supervisors = ["Daniel Scherer", "Christopher Mutschler"]
 title = "Automated Generation of Block-Encodings for Quantum Policy Iteration"
 type = "Master Thesis"
 status = "finished"
