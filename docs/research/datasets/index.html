@@ -1,138 +1,149 @@
-<!doctype html>
+<!DOCTYPE html>
+
 <html lang="en-US">
 <head>
-<meta charset="utf-8">
+<meta charset="utf-8"/>
+<meta content="width=device-width,initial-scale=1" name="viewport"/>
+<meta content="max-image-preview:large" name="robots"/>
 <title>Datasets – Machine Learning and Positioning Systems</title>
-<meta name="robots" content="max-image-preview:large">
-<meta name="viewport" content="width=device-width, initial-scale=1">
-<link rel="stylesheet" href="../../assets/css/style.css">
-
-<meta name="theme-color" content="#1df900">
-<link rel="icon" href="../../assets/media/2026/06/cropped-cropped-mlps-logo_utn-scaled-1-32x32.png" sizes="32x32">
-<link rel="icon" href="../../assets/media/2026/06/cropped-cropped-mlps-logo_utn-scaled-1-192x192.png" sizes="192x192">
-<link rel="apple-touch-icon" href="../../assets/media/2026/06/cropped-cropped-mlps-logo_utn-scaled-1-180x180.png">
-<meta name="msapplication-TileImage" content="../wp-content/uploads/2026/06/cropped-cropped-mlps-logo_utn-scaled-1-270x270.png">
-
-<link rel="canonical" href="https://mlps-lab.de/research/datasets/">
-
-<script src="../../assets/site.js" defer></script>
+<meta content="Public datasets from the MLPS Lab for machine learning, localization, sensing and industrial research." name="description"/>
+<link href="https://mutschcr.github.io/mlps-lab/research/datasets/" rel="canonical"/>
+<meta content="#1df900" name="theme-color"/>
+<link href="../../assets/media/2026/06/cropped-cropped-mlps-logo_utn-scaled-1-32x32.png" rel="icon" sizes="32x32"/>
+<link href="../../assets/css/style.css" rel="stylesheet"/>
+<link href="datasets.css" rel="stylesheet"/>
+<script defer="" src="../../assets/site.js"></script>
 </head>
-<body class="wp-singular page-template-default page page-id-810 page-parent wp-custom-logo wp-embed-responsive wp-theme-sinatra sinatra-topbar__separators-regular sinatra-layout__fw-contained sinatra-header-layout-1 sinatra-menu-animation-underline sinatra-header__separators-none si-page-title-align-left sinatra-no-sidebar entry-media-hover-style-1 si-input-supported validate-comment-form si-menu-accessibility si-sticky-header">
-
-<div id="page" class="hfeed site">
-	<a class="skip-link screen-reader-text" href="#content">Skip to content</a>
-
-	<header id="masthead" class="site-header" role="banner" itemtype="https://schema.org/WPHeader" itemscope="itemscope">
-		<div id="sinatra-header">
-		<div id="sinatra-header-inner">
-	
+<body class="mlps-datasets wp-singular page-template-default wp-custom-logo wp-embed-responsive wp-theme-sinatra sinatra-topbar__separators-regular sinatra-layout__fw-contained sinatra-header-layout-1 sinatra-menu-animation-underline sinatra-header__separators-none si-page-title-align-left sinatra-no-sidebar entry-media-hover-style-1 si-input-supported si-menu-accessibility si-sticky-header">
+<div class="hfeed site" id="page">
+<a class="skip-link screen-reader-text" href="#content">Skip to content</a>
+<header class="site-header" id="masthead" role="banner">
+<div id="sinatra-header"><div id="sinatra-header-inner">
 <div class="si-container si-header-container">
-
-<div class="sinatra-logo si-header-element" itemtype="https://schema.org/Organization" itemscope="itemscope">
-	<div class="logo-inner"><a href="../../" rel="home" class="" itemprop="url">
-					<img src="../../assets/media/2026/07/mlps-logo_utn.png" alt="Machine Learning and Positioning Systems" width="1642" height="230" srcset="../../assets/media/2026/07/mlps-logo_utn.png 1x, ../../assets/media/2026/07/mlps-logo_utn.png 2x" itemprop="logo">
-				</a></div>
-</div>
-<nav class="site-navigation main-navigation sinatra-primary-nav sinatra-nav si-header-element" role="navigation" itemtype="https://schema.org/SiteNavigationElement" itemscope="itemscope" aria-label="Site Navigation" aria-haspopup="true">
-<ul id="sinatra-primary-nav" class="menu">
-<li id="menu-item-3303" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-home menu-item-3303"><a href="../../"><span>Home</span></a></li>
-<li id="menu-item-3074" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-3074"><a href="../../team/"><span>Team</span></a></li>
-<li id="menu-item-2970" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-2970"><a href="../../publications/"><span>Publications</span></a></li>
-<li id="menu-item-4103" class="menu-item menu-item-type-post_type menu-item-object-page current-menu-ancestor current-menu-parent current_page_parent current_page_ancestor menu-item-has-children menu-item-4103" aria-haspopup="true">
-<a href="../"><span>Research</span><svg class="si-icon" xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewbox="0 0 32 32"><path d="M24.958 10.483c-0.534-0.534-1.335-0.534-1.868 0l-7.074 7.074-7.074-7.074c-0.534-0.534-1.335-0.534-1.868 0s-0.534 1.335 0 1.868l8.008 8.008c0.267 0.267 0.667 0.4 0.934 0.4s0.667-0.133 0.934-0.4l8.008-8.008c0.534-0.534 0.534-1.335 0-1.868z"></path></svg></a>
-<ul class="sub-menu">
-	<li id="menu-item-3499" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-3499"><a href="../research-projects.html"><span>Research Projects</span></a></li>
-	<li id="menu-item-3472" class="menu-item menu-item-type-post_type menu-item-object-page current-menu-item page_item page-item-810 current_page_item menu-item-3472"><a href="./" aria-current="page"><span>Datasets</span></a></li>
-</ul>
+<div class="sinatra-logo si-header-element"><div class="logo-inner">
+<a href="../../" rel="home"><img alt="Machine Learning and Positioning Systems" height="230" src="../../assets/media/2026/07/mlps-logo_utn.png" width="1642"/></a>
+</div></div>
+<nav aria-haspopup="true" aria-label="Site Navigation" class="site-navigation main-navigation sinatra-primary-nav sinatra-nav si-header-element">
+<ul class="menu" id="sinatra-primary-nav">
+<li class="menu-item"><a href="../../"><span>Home</span></a></li>
+<li class="menu-item"><a href="../../team/"><span>Team</span></a></li>
+<li class="menu-item"><a href="../../publications/"><span>Publications</span></a></li>
+<li aria-haspopup="true" class="menu-item menu-item-has-children current-menu-ancestor">
+<a href="../../research/"><span>Research</span><svg aria-hidden="true" class="si-icon" height="32" viewbox="0 0 32 32" width="32" xmlns="http://www.w3.org/2000/svg"><path d="M24.958 10.483c-.534-.534-1.335-.534-1.868 0l-7.074 7.074-7.074-7.074c-.534-.534-1.335-.534-1.868 0s-.534 1.335 0 1.868l8.008 8.008c.267.267.667.4.934.4s.667-.133.934-.4l8.008-8.008c.534-.534.534-1.335 0-1.868Z"></path></svg></a>
+<ul class="sub-menu"><li class="menu-item"><a href="../../research/research-projects.html"><span>Research Projects</span></a></li>
+<li class="menu-item current-menu-item"><a aria-current="page" href="../../research/datasets/"><span>Datasets</span></a></li></ul>
 </li>
-<li id="menu-item-4281" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-4281"><a href="../../teaching/"><span>Teaching</span></a></li>
-<li id="menu-item-4298" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-4298"><a href="../../theses/"><span>Theses &amp; Projects</span></a></li>
-</ul></nav><div class="si-header-widgets si-header-element sinatra-widget-location-right"></div>
-<span class="si-header-element si-mobile-nav">
-				<button class="si-hamburger hamburger--spin si-hamburger-sinatra-primary-nav" aria-label="Menu" aria-controls="sinatra-primary-nav" type="button">
-
-			<span class="hamburger-box">
-				<span class="hamburger-inner"></span>
-			</span>
-
-		</button>
-			</span>
-
+<li class="menu-item"><a href="../../teaching/"><span>Teaching</span></a></li>
+<li class="menu-item"><a href="../../theses/"><span>Theses &amp; Projects</span></a></li>
+</ul>
+</nav>
+<div class="si-header-widgets si-header-element sinatra-widget-location-right"></div>
+<span class="si-header-element si-mobile-nav"><button aria-controls="sinatra-primary-nav" aria-label="Menu" class="si-hamburger hamburger--spin si-hamburger-sinatra-primary-nav" type="button"><span class="hamburger-box"><span class="hamburger-inner"></span></span></button></span>
+</div></div><div id="si-sticky-placeholder"></div></div>
+</header>
+<div class="site-main" id="main"><div class="si-container"><div class="content-area" id="primary"><main class="site-content" id="content" role="main">
+<article class="page type-page status-publish hentry"><div class="entry-content si-entry ds-page ds-overview">
+<h2 class="wp-block-heading" id="datasets-heading">Datasets</h2>
+<div class="ds-intro">
+<p class="ds-lead">We provide public datasets for machine learning, positioning and sensing — from radio-based localization to industrial applications and event-stream analytics.</p>
 </div>
+<section aria-labelledby="wireless-heading" id="wireless-positioning">
+<div class="ds-section-head"><h3 class="wp-block-heading" id="wireless-heading">Datasets for Wireless Positioning</h3></div>
+<div class="ds-grid">
+<article class="ds-card">
+<a aria-label="Open Fingerprinting Dataset for Positioning" class="ds-card-image" href="fingerprinting/">
+<img src="fingerprinting/images/uwb-env-real-thumb.jpg" alt="UWB measurement environment at Fraunhofer IIS" loading="lazy" decoding="async" width="960" height="432"/></a>
+<div class="ds-card-main">
+<h3><a class="ds-card-title-link" href="fingerprinting/">Fingerprinting Dataset for Positioning</a></h3>
+<p class="ds-card-description">UWB and 5G CIR measurements, ToF/TDoA and reference positions for indoor radio fingerprinting.</p>
+<div class="ds-meta"><span class="ds-meta-item"><svg aria-hidden="true" fill="none" focusable="false" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.6" viewbox="0 0 16 16"><path d="m8 2 6 3-6 3-6-3 6-3Zm-6 6 6 3 6-3M2 11l6 3 6-3"></path></svg><span><strong>Modality:</strong> UWB + 5G CIR</span></span><span class="ds-meta-item"><svg aria-hidden="true" fill="none" focusable="false" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.6" viewbox="0 0 16 16"><circle cx="8" cy="8" r="6"></circle><circle cx="8" cy="8" r="2"></circle></svg><span><strong>Application:</strong> Indoor localization</span></span><span class="ds-meta-item"><svg aria-hidden="true" fill="none" focusable="false" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.6" viewbox="0 0 16 16"><path d="M4 1h5l4 4v10H4z"></path><path d="M9 1v4h4"></path></svg><span><strong>Data:</strong> UWB + 5G archives</span></span></div>
+<div class="ds-card-actions"><a class="ds-btn ds-btn-primary" href="fingerprinting/">More Info <svg aria-hidden="true" fill="none" focusable="false" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.6" viewBox="0 0 16 16"><path d="M3 8h12m-5-5 5 5-5 5"></path></svg></a></div>
 </div>
-<div id="si-sticky-placeholder"></div>
-</div></header><div id="main" class="site-main">
-
-<div class="si-container">
-
-	<div id="primary" class="content-area">
-
-		<main id="content" class="site-content" role="main" itemtype="http://schema.org/WebPageElement" itemprop="mainContentOfPage">
-
-<article id="post-810" class="post-810 page type-page status-publish hentry" itemscope="" itemtype="https://schema.org/CreativeWork">
-
-<div class="entry-content si-entry">
-	
-<h2 class="wp-block-heading"><a href="debs-2013-grand-challenge-soccer-monitoring.html">DEBS 2013 Grand Challenge Soccer Monitoring dataset</a></h2>
-
-<div class="media-text is-stacked-on-mobile is-vertically-aligned-top" style="grid-template-columns:35% auto">
-<figure class="media-text__media"><img fetchpriority="high" decoding="async" width="1024" height="576" src="../../assets/media/2026/09/vlcsnap-2026-09-03-13h47m07s589.png" alt="" class="wp-image-3516 size-full" srcset="../../assets/media/2026/09/vlcsnap-2026-09-03-13h47m07s589.png 1920w" sizes="(max-width: 1024px) 100vw, 1024px"></figure><div class="media-text__content">
-<p style="text-align: justify;">The DEBS 2013 Soccer Monitoring dataset contains high-frequency positional tracking data collected during a complete soccer match using wireless sensors attached to players and embedded in the ball. It records 3D position, velocity, and acceleration at up to <strong>2,000 Hz</strong>, generating roughly <strong>15,000 position events per second</strong>. The dataset supports research in real-time event processing and sports analytics, including player movement analysis, ball possession, heat maps, and shot detection.</p>
-<p style="text-align: justify;"><strong>Modality:</strong> Spatiotemporal sensor time series / positional tracking data<br><strong>Recording:</strong> One match, two 30-minute halves, 7 players per team<br><strong>Sampling rate:</strong> 200 Hz for player sensors; 2,000 Hz for the ball<br><strong>Raw dataset size:</strong> <strong>2.6 GB</strong> (6.0 GB including videos)<br><strong>Primary use:</strong> Real-time sports analytics, event-stream processing</p>
+</article>
+<article class="ds-card">
+<a aria-label="Open Passive UWB" class="ds-card-image" href="passive-uwb/">
+<img src="passive-uwb/images/passive-uwb-thumb.jpg" alt="Passive UWB test environment at Fraunhofer IIS" loading="lazy" decoding="async" width="960" height="432"/></a>
+<div class="ds-card-main">
+<h3><a class="ds-card-title-link" href="passive-uwb/">Passive UWB</a></h3>
+<p class="ds-card-description">Multistatic UWB CIR and IMU recordings with optical ground truth for passive target localization.</p>
+<div class="ds-meta"><span class="ds-meta-item"><svg aria-hidden="true" fill="none" focusable="false" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.6" viewbox="0 0 16 16"><path d="m8 2 6 3-6 3-6-3 6-3Zm-6 6 6 3 6-3M2 11l6 3 6-3"></path></svg><span><strong>Modality:</strong> Passive UWB CIR + IMU</span></span><span class="ds-meta-item"><svg aria-hidden="true" fill="none" focusable="false" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.6" viewbox="0 0 16 16"><circle cx="8" cy="8" r="6"></circle><circle cx="8" cy="8" r="2"></circle></svg><span><strong>Application:</strong> Passive localization</span></span><span class="ds-meta-item"><svg aria-hidden="true" fill="none" focusable="false" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.6" viewbox="0 0 16 16"><path d="M4 1h5l4 4v10H4z"></path><path d="M9 1v4h4"></path></svg><span><strong>Data:</strong> 3 recording sessions</span></span></div>
+<div class="ds-card-actions"><a class="ds-btn ds-btn-primary" href="passive-uwb/">More Info <svg aria-hidden="true" fill="none" focusable="false" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.6" viewBox="0 0 16 16"><path d="M3 8h12m-5-5 5 5-5 5"></path></svg></a></div>
 </div>
+</article>
+<article class="ds-card">
+<a aria-label="Open RAIL-5G" class="ds-card-image" href="rail-5g/">
+<img src="rail-5g/images/rail-5g-thumb.jpg" alt="RAIL-5G measurements in a train maintenance hall" loading="lazy" decoding="async" width="960" height="432"/></a>
+<div class="ds-card-main">
+<h3><a class="ds-card-title-link" href="rail-5g/">RAIL-5G</a></h3>
+<p class="ds-card-description">Wideband 5G CIR and high-accuracy reference trajectories from a metallic railway maintenance facility.</p>
+<div class="ds-meta"><span class="ds-meta-item"><svg aria-hidden="true" fill="none" focusable="false" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.6" viewbox="0 0 16 16"><path d="m8 2 6 3-6 3-6-3 6-3Zm-6 6 6 3 6-3M2 11l6 3 6-3"></path></svg><span><strong>Modality:</strong> 5G CIR</span></span><span class="ds-meta-item"><svg aria-hidden="true" fill="none" focusable="false" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.6" viewbox="0 0 16 16"><circle cx="8" cy="8" r="6"></circle><circle cx="8" cy="8" r="2"></circle></svg><span><strong>Application:</strong> Indoor localization</span></span><span class="ds-meta-item"><svg aria-hidden="true" fill="none" focusable="false" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.6" viewbox="0 0 16 16"><path d="M4 1h5l4 4v10H4z"></path><path d="M9 1v4h4"></path></svg><span><strong>Data:</strong> 8 recording sessions</span></span></div>
+<div class="ds-card-actions"><a class="ds-btn ds-btn-primary" href="rail-5g/">More Info <svg aria-hidden="true" fill="none" focusable="false" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.6" viewBox="0 0 16 16"><path d="M3 8h12m-5-5 5 5-5 5"></path></svg></a></div>
 </div>
+</article></div>
+</section>
 
-<hr class="wp-block-separator has-alpha-channel-opacity is-style-wide">
+<section aria-labelledby="ipin-heading" class="ds-ipin-section" id="ipin-competitions">
+<article class="ds-ipin-feature">
+  <div class="ds-ipin-feature-media">
+    <img class="ds-ipin-feature-photo" src="ipin-collection/images/5g-env-real-thumb.jpg" alt="Industrial test environment for IPIN positioning benchmarks at Fraunhofer IIS" loading="lazy" decoding="async" width="1600" height="420"/>
+  </div>
+  <div class="ds-ipin-feature-body">
+    <h3 class="wp-block-heading" id="ipin-heading">IPIN Competition Datasets</h3>
+    <p>For the Indoor Positioning and Indoor Navigation (IPIN) competitions, we provide benchmark datasets in cooperation with Fraunhofer IIS. They cover UWB and 5G channel impulse responses (CIR) and increasingly challenging indoor localization scenarios, including dynamic environments, different carrying agents, additional smartphone sensor data, and limited reference positions.</p>
+    <nav class="ds-ipin-years" aria-label="Individual IPIN competition datasets">
+      <a aria-label="IPIN2020: UWB CIR" class="ds-ipin-year ds-btn ds-btn-primary" href="ipin2020/"><strong>IPIN2020</strong><span class="ds-ipin-type">UWB CIR</span></a>
+      <a aria-label="IPIN2021: UWB CIR; Dynamic environment" class="ds-ipin-year ds-btn ds-btn-primary" href="ipin2021/"><strong>IPIN2021</strong><span class="ds-ipin-type">UWB CIR</span><span class="ds-ipin-note">Dynamic environment</span></a>
+      <a aria-label="IPIN2022: UWB CIR; Different carrying agents" class="ds-ipin-year ds-btn ds-btn-primary" href="ipin2022/"><strong>IPIN2022</strong><span class="ds-ipin-type">UWB CIR</span><span class="ds-ipin-note">Different carrying agents</span></a>
+      <a aria-label="IPIN2023: 5G CIR" class="ds-ipin-year ds-btn ds-btn-primary" href="ipin2023/"><strong>IPIN2023</strong><span class="ds-ipin-type">5G CIR</span></a>
+      <a aria-label="IPIN2025: 5G CIR + IMU" class="ds-ipin-year ds-btn ds-btn-primary" href="ipin2025/"><strong>IPIN2025</strong><span class="ds-ipin-type">5G CIR + IMU</span></a>
+      <a aria-label="IPIN2026: 5G CIR; Sparse ground truth" class="ds-ipin-year ds-btn ds-btn-primary" href="ipin2026/"><strong>IPIN2026</strong><span class="ds-ipin-type">5G CIR</span><span class="ds-ipin-note">Sparse ground truth</span></a>
+    </nav>
+    <div class="ds-ipin-feature-links">
+      <a href="ipin-collection/">More about onsite and offsite IPIN datasets <span aria-hidden="true">↗</span></a>
+      <a href="https://www.iis.fraunhofer.de/en/ff/lv/lok/datasets-for-localization.html" target="_blank" rel="noopener noreferrer">Datasets at Fraunhofer IIS <span aria-hidden="true">↗</span></a>
+    </div>
+  </div>
+</article>
+</section>
 
-<h2 class="wp-block-heading"><a href="warehouse-dataset.html">Warehouse Dataset</a></h2>
-
-<div class="media-text is-stacked-on-mobile is-vertically-aligned-top" style="grid-template-columns:35% auto">
-<figure class="media-text__media"><img decoding="async" width="640" height="480" src="../../assets/media/2020/04/Messung3.jpg" alt="" class="wp-image-816 size-full" srcset="../../assets/media/2020/04/Messung3.jpg 640w" sizes="(max-width: 640px) 100vw, 640px"></figure><div class="media-text__content">
-<p style="text-align: justify;">The <strong>Warehouse Dataset</strong> is a large-scale visual indoor-positioning dataset recorded across<strong> 1,320 m²</strong> of an industrial warehouse. It contains <strong>464,804 RGB images (640×480)</strong> captured by eight cameras, with each image precisely labeled with 3D position and orientation using an optical reference system. It provides dedicated training and testing trajectories designed to evaluate ML-based localization under conditions such as motion artifacts, scale changes, open spaces, shelving areas, and different localization ranges.</p>
-<p style="text-align: justify;"><strong>Modality:</strong> RGB images + spatial pose labels (3D position and orientation/quaternion)<br><strong>Number of images:</strong> 464,804<br><strong>Complete size:</strong> approximately <strong>31.8 GB</strong> across the listed training and testing archives<br><strong>Primary use:</strong> Visual indoor localization / ML-based positioning in industrial environments</p>
+<section aria-labelledby="misc-heading" id="miscellaneous-datasets">
+<div class="ds-section-head"><h3 class="wp-block-heading" id="misc-heading">Miscellaneous Datasets</h3></div>
+<div class="ds-grid">
+<article class="ds-card">
+<a aria-label="Open DEBS 2013 Grand Challenge Soccer Monitoring" class="ds-card-image" href="debs-2013/">
+<object aria-label="Soccer match recorded during the DEBS challenge" class="ds-photo-object" data="images/soccer-match.png" role="img" type="image/png"><img alt="Soccer match recorded during the DEBS challenge" loading="lazy" src="../../assets/media/2026/09/vlcsnap-2026-09-03-13h47m07s589.png"/></object></a>
+<div class="ds-card-main">
+<h3><a class="ds-card-title-link" href="debs-2013/">DEBS 2013 Soccer Monitoring</a></h3>
+<p class="ds-card-description">High-frequency positional tracking from an instrumented soccer match for event-stream research and sports analytics.</p>
+<div class="ds-meta"><span class="ds-meta-item"><svg aria-hidden="true" fill="none" focusable="false" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.6" viewbox="0 0 16 16"><path d="m8 2 6 3-6 3-6-3 6-3Zm-6 6 6 3 6-3M2 11l6 3 6-3"></path></svg><span><strong>Modality:</strong> Positional time series</span></span><span class="ds-meta-item"><svg aria-hidden="true" fill="none" focusable="false" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.6" viewbox="0 0 16 16"><circle cx="8" cy="8" r="6"></circle><circle cx="8" cy="8" r="2"></circle></svg><span><strong>Application:</strong> Sports analytics</span></span><span class="ds-meta-item"><svg aria-hidden="true" fill="none" focusable="false" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.6" viewbox="0 0 16 16"><path d="M4 1h5l4 4v10H4z"></path><path d="M9 1v4h4"></path></svg><span><strong>Data:</strong> 2.6 GB raw</span></span></div>
+<div class="ds-card-actions"><a class="ds-btn ds-btn-primary" href="debs-2013/">More Info <svg aria-hidden="true" fill="none" focusable="false" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.6" viewBox="0 0 16 16"><path d="M3 8h12m-5-5 5 5-5 5"></path></svg></a></div>
 </div>
+</article>
+<article class="ds-card">
+<a aria-label="Open Warehouse Dataset" class="ds-card-image" href="warehouse/">
+<object aria-label="Industrial warehouse with storage racks" class="ds-photo-object" data="images/warehouse.jpg" role="img" type="image/jpeg"><img alt="Industrial warehouse with storage racks" loading="lazy" src="../../assets/media/2020/04/Messung3.jpg"/></object></a>
+<div class="ds-card-main">
+<h3><a class="ds-card-title-link" href="warehouse/">Warehouse Dataset</a></h3>
+<p class="ds-card-description">Large-scale visual indoor positioning with nearly half a million RGB images and 3D pose labels.</p>
+<div class="ds-meta"><span class="ds-meta-item"><svg aria-hidden="true" fill="none" focusable="false" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.6" viewbox="0 0 16 16"><path d="m8 2 6 3-6 3-6-3 6-3Zm-6 6 6 3 6-3M2 11l6 3 6-3"></path></svg><span><strong>Modality:</strong> RGB + 3D pose</span></span><span class="ds-meta-item"><svg aria-hidden="true" fill="none" focusable="false" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.6" viewbox="0 0 16 16"><circle cx="8" cy="8" r="6"></circle><circle cx="8" cy="8" r="2"></circle></svg><span><strong>Application:</strong> Indoor localization</span></span><span class="ds-meta-item"><svg aria-hidden="true" fill="none" focusable="false" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.6" viewbox="0 0 16 16"><path d="M4 1h5l4 4v10H4z"></path><path d="M9 1v4h4"></path></svg><span><strong>Data:</strong> ≈31.8 GB</span></span></div>
+<div class="ds-card-actions"><a class="ds-btn ds-btn-primary" href="warehouse/">More Info <svg aria-hidden="true" fill="none" focusable="false" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.6" viewBox="0 0 16 16"><path d="M3 8h12m-5-5 5 5-5 5"></path></svg></a></div>
 </div>
+</article>
+<article class="ds-card">
+<a aria-label="Open Tool Tracking Dataset" class="ds-card-image" href="tool-tracking/">
+<object aria-label="Industrial hand tools used for sensor measurements" class="ds-photo-object" data="images/tool-tracking.jpg" role="img" type="image/jpeg"><img alt="Industrial hand tools used for sensor measurements" loading="lazy" src="../../assets/media/2020/06/20190326_134337b-scaled.jpg"/></object></a>
+<div class="ds-card-main">
+<h3><a class="ds-card-title-link" href="tool-tracking/">Tool Tracking Dataset</a></h3>
+<p class="ds-card-description">Inertial, magnetic-field and audio recordings of hand-tool operations and anomalous actions.</p>
+<div class="ds-meta"><span class="ds-meta-item"><svg aria-hidden="true" fill="none" focusable="false" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.6" viewbox="0 0 16 16"><path d="m8 2 6 3-6 3-6-3 6-3Zm-6 6 6 3 6-3M2 11l6 3 6-3"></path></svg><span><strong>Modality:</strong> IMU + magnetic + audio</span></span><span class="ds-meta-item"><svg aria-hidden="true" fill="none" focusable="false" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.6" viewbox="0 0 16 16"><circle cx="8" cy="8" r="6"></circle><circle cx="8" cy="8" r="2"></circle></svg><span><strong>Application:</strong> Action recognition</span></span><span class="ds-meta-item"><svg aria-hidden="true" fill="none" focusable="false" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.6" viewbox="0 0 16 16"><path d="M4 1h5l4 4v10H4z"></path><path d="M9 1v4h4"></path></svg><span><strong>Data:</strong> 984 MB</span></span></div>
+<div class="ds-card-actions"><a class="ds-btn ds-btn-primary" href="tool-tracking/">More Info <svg aria-hidden="true" fill="none" focusable="false" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.6" viewBox="0 0 16 16"><path d="M3 8h12m-5-5 5 5-5 5"></path></svg></a></div>
+</div>
+</article>
+<article class="ds-card"><a aria-label="Open Online Handwriting Recognition from Sensor-Enhanced Pens" class="ds-card-image" href="handwriting/"><object aria-label="Sensor-enhanced handwriting on a tablet" class="ds-photo-object" data="images/handwriting.png" role="img" type="image/png"><img alt="Sensor-enhanced handwriting on a tablet" loading="lazy" src="../../assets/media/2026/09/Bildschirmfoto-2026-09-03-um-10.41.32.png"/></object></a><div class="ds-card-main"><h3><a class="ds-card-title-link" href="handwriting/">Online Handwriting Recognition from Sensor-Enhanced Pens</a></h3><p class="ds-card-description">Sensor-enhanced pen recordings for research on online handwriting recognition.</p><div class="ds-meta"><span class="ds-meta-item"><svg aria-hidden="true" fill="none" focusable="false" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.6" viewbox="0 0 16 16"><path d="m8 2 6 3-6 3-6-3 6-3Zm-6 6 6 3 6-3M2 11l6 3 6-3"></path></svg><span><strong>Modality:</strong> Pen sensor data</span></span><span class="ds-meta-item"><svg aria-hidden="true" fill="none" focusable="false" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.6" viewbox="0 0 16 16"><circle cx="8" cy="8" r="6"></circle><circle cx="8" cy="8" r="2"></circle></svg><span><strong>Application:</strong> Handwriting recognition</span></span></div><div class="ds-card-actions"><a class="ds-btn ds-btn-primary" href="handwriting/">More Info <svg aria-hidden="true" fill="none" focusable="false" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.6" viewBox="0 0 16 16"><path d="M3 8h12m-5-5 5 5-5 5"></path></svg></a></div></div></article></div>
+</section>
 
-<hr class="wp-block-separator has-alpha-channel-opacity is-style-wide">
+</div></article>
+</main></div></div></div>
+</div>
+</body></html>
 
-<h2 class="wp-block-heading"><a href="tool-tracking-dataset.html">Tool Tracking Dataset</a></h2>
-
-<div class="media-text is-stacked-on-mobile is-vertically-aligned-top" style="grid-template-columns:35% auto">
-<figure class="media-text__media"><img decoding="async" width="1024" height="768" src="../../assets/media/2020/06/20190326_134337b-scaled.jpg" alt="" class="wp-image-978 size-full" sizes="(max-width: 1024px) 100vw, 1024px"></figure><div class="media-text__content">
-<p style="text-align: justify;">The Tool Tracking Dataset contains multimodal sensor recordings from four industrial hand tools: an electric screwdriver, pneumatic screwdriver, pneumatic riveting gun, and torque wrench. Accelerometer, gyroscope, magnetometer, and audio data capture typical tool operations as well as anomalous actions such as shaking, hard placement, or component changes. Recordings span approximately 30–60 minutes per tool and contain around 100–200 examples per action type, making the dataset suitable for machine-learning-based activity recognition, anomaly detection, and automated quality assurance in manual industrial processes.</p>
-<p style="text-align: justify;"><br><strong>Modality:</strong> Multimodal sensor time series — inertial, magnetic-field, and audio data<br><strong>Tools:</strong> 4 industrial hand tools<br><strong>Complete size:</strong> <strong>984 MB</strong><br><strong>Primary use:</strong> Tool/action recognition, anomaly detection, and industrial quality assurance</p>
-</div>
-</div>
-
-<hr class="wp-block-separator has-alpha-channel-opacity is-style-wide">
-
-<h2 class="wp-block-heading">IPIN Competition – onsite and offsite Indoor Localization</h2>
-
-<div class="media-text is-stacked-on-mobile" style="grid-template-columns:35% auto">
-<figure class="media-text__media"><img loading="lazy" decoding="async" width="1024" height="683" src="../../assets/media/2026/09/5g_ref.png" alt="" class="wp-image-3479 size-full" srcset="../../assets/media/2026/09/5g_ref.png 1236w" sizes="auto, (max-width: 1024px) 100vw, 1024px"></figure><div class="media-text__content">
-<p class="wp-block-paragraph"></p>
-</div>
-</div>
-
-<hr class="wp-block-separator has-alpha-channel-opacity">
-
-<h2 class="wp-block-heading">Online Handwriting Recognition from Sensor-Enhanced Pens</h2>
-
-<div class="media-text is-stacked-on-mobile" style="grid-template-columns:35% auto">
-<figure class="media-text__media"><img loading="lazy" decoding="async" width="931" height="483" src="../../assets/media/2026/09/Bildschirmfoto-2026-09-03-um-10.41.32.png" alt="" class="wp-image-3480 size-full" srcset="../../assets/media/2026/09/Bildschirmfoto-2026-09-03-um-10.41.32.png 931w" sizes="auto, (max-width: 931px) 100vw, 931px"></figure><div class="media-text__content">
-<p class="wp-block-paragraph"></p>
-</div>
-</div>
-</div></article></main>
-</div>
-</div>
-</div>
-</div>
-<a href="#" id="si-scroll-top" class="si-smooth-scroll" title="Scroll to Top">
-	<span class="si-scroll-icon" aria-hidden="true">
-		<svg class="si-icon top-icon" xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewbox="0 0 32 32"><path d="M24.958 18.491l-8.008-8.008c-0.534-0.534-1.335-0.534-1.868 0l-8.008 8.008c-0.534 0.534-0.534 1.335 0 1.868s1.335 0.534 1.868 0l7.074-7.074 7.074 7.074c0.267 0.267 0.667 0.4 0.934 0.4s0.667-0.133 0.934-0.4c0.534-0.534 0.534-1.335 0-1.868z"></path></svg>		<svg class="si-icon" xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewbox="0 0 32 32"><path d="M24.958 18.491l-8.008-8.008c-0.534-0.534-1.335-0.534-1.868 0l-8.008 8.008c-0.534 0.534-0.534 1.335 0 1.868s1.335 0.534 1.868 0l7.074-7.074 7.074 7.074c0.267 0.267 0.667 0.4 0.934 0.4s0.667-0.133 0.934-0.4c0.534-0.534 0.534-1.335 0-1.868z"></path></svg>	</span>
-	<span class="screen-reader-text">Scroll to Top</span>
-</a>
-
-</body>
-</html>

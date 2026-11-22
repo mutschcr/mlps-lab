@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+
+<html lang="en-US">
+<head>
+<meta charset="utf-8"/>
+<meta content="width=device-width,initial-scale=1" name="viewport"/>
+<meta content="max-image-preview:large" name="robots"/>
+<title>Tool Tracking Dataset – Machine Learning and Positioning Systems</title>
+<meta content="Multimodal time-series recordings of industrial hand tools and manual work activities." name="description"/>
+<link href="https://mutschcr.github.io/mlps-lab/research/datasets/tool-tracking/" rel="canonical"/>
+<meta content="#1df900" name="theme-color"/>
+<link href="../../../assets/media/2026/06/cropped-cropped-mlps-logo_utn-scaled-1-32x32.png" rel="icon" sizes="32x32"/>
+<link href="../../../assets/css/style.css" rel="stylesheet"/>
+<link href="../datasets.css" rel="stylesheet"/>
+<script defer="" src="../../../assets/site.js"></script>
+</head>
+<body class="mlps-datasets wp-singular page-template-default wp-custom-logo wp-embed-responsive wp-theme-sinatra sinatra-topbar__separators-regular sinatra-layout__fw-contained sinatra-header-layout-1 sinatra-menu-animation-underline sinatra-header__separators-none si-page-title-align-left sinatra-no-sidebar entry-media-hover-style-1 si-input-supported si-menu-accessibility si-sticky-header">
+<div class="hfeed site" id="page">
+<a class="skip-link screen-reader-text" href="#content">Skip to content</a>
+<header class="site-header" id="masthead" role="banner">
+<div id="sinatra-header"><div id="sinatra-header-inner">
+<div class="si-container si-header-container">
+<div class="sinatra-logo si-header-element"><div class="logo-inner">
+<a href="../../../" rel="home"><img alt="Machine Learning and Positioning Systems" height="230" src="../../../assets/media/2026/07/mlps-logo_utn.png" width="1642"/></a>
+</div></div>
+<nav aria-haspopup="true" aria-label="Site Navigation" class="site-navigation main-navigation sinatra-primary-nav sinatra-nav si-header-element">
+<ul class="menu" id="sinatra-primary-nav">
+<li class="menu-item"><a href="../../../"><span>Home</span></a></li>
+<li class="menu-item"><a href="../../../team/"><span>Team</span></a></li>
+<li class="menu-item"><a href="../../../publications/"><span>Publications</span></a></li>
+<li aria-haspopup="true" class="menu-item menu-item-has-children current-menu-ancestor">
+<a href="../../../research/"><span>Research</span><svg aria-hidden="true" class="si-icon" height="32" viewbox="0 0 32 32" width="32" xmlns="http://www.w3.org/2000/svg"><path d="M24.958 10.483c-.534-.534-1.335-.534-1.868 0l-7.074 7.074-7.074-7.074c-.534-.534-1.335-.534-1.868 0s-.534 1.335 0 1.868l8.008 8.008c.267.267.667.4.934.4s.667-.133.934-.4l8.008-8.008c.534-.534.534-1.335 0-1.868Z"></path></svg></a>
+<ul class="sub-menu"><li class="menu-item"><a href="../../../research/research-projects.html"><span>Research Projects</span></a></li>
+<li class="menu-item current-menu-item"><a aria-current="page" href="../../../research/datasets/"><span>Datasets</span></a></li></ul>
+</li>
+<li class="menu-item"><a href="../../../teaching/"><span>Teaching</span></a></li>
+<li class="menu-item"><a href="../../../theses/"><span>Theses &amp; Projects</span></a></li>
+</ul>
+</nav>
+<div class="si-header-widgets si-header-element sinatra-widget-location-right"></div>
+<span class="si-header-element si-mobile-nav"><button aria-controls="sinatra-primary-nav" aria-label="Menu" class="si-hamburger hamburger--spin si-hamburger-sinatra-primary-nav" type="button"><span class="hamburger-box"><span class="hamburger-inner"></span></span></button></span>
+</div></div><div id="si-sticky-placeholder"></div></div>
+</header>
+<div class="site-main" id="main"><div class="si-container"><div class="content-area" id="primary"><main class="site-content" id="content" role="main">
+<article class="page type-page status-publish hentry"><div class="entry-content si-entry ds-page ds-document ds-tool-tracking-page">
+<h2 class="wp-block-heading">Tool Tracking Dataset</h2>
+<div class="ds-document-hero">
+<div class="ds-hero-image"><figure class="ds-hero-figure"><img alt="Three industrial hand tools used in the tool-tracking recordings" decoding="async" src="images/20190326_134337b-scaled.jpg"/></figure></div>
+<div class="ds-hero-content"><span class="ds-hero-kicker">DATASET OVERVIEW</span>
+<p class="ds-hero-summary">Multimodal sensor data from four hand-held industrial tools for activity recognition, process monitoring and automatic quality assurance of manual assembly work.</p>
+<div aria-label="Dataset topics" class="ds-tags"><span class="ds-tag">Accelerometer + gyroscope</span><span class="ds-tag">Magnetic field</span><span class="ds-tag">Audio</span><span class="ds-tag">Industrial tools</span></div>
+<div class="ds-hero-actions"><a class="ds-btn ds-btn-primary" href="#download">Access data</a></div>
+</div>
+<aside aria-label="Dataset metadata" class="ds-spec-panel"><h3>Dataset metadata</h3><dl class="ds-spec-list">
+<div><dt>Tools</dt><dd>4 hand-held tools</dd></div>
+<div><dt>Modality</dt><dd>Inertial, magnetic, audio</dd></div>
+<div><dt>Recording</dt><dd>30–60 min per tool</dd></div>
+<div><dt>Size</dt><dd>984 MB</dd></div>
+<div><dt>Use cases</dt><dd>Action recognition, quality assurance</dd></div>
+</dl></aside>
+</div>
+<nav aria-label="On this page" class="ds-document-toc"><span class="ds-document-toc-label">ON THIS PAGE</span><div class="ds-document-toc-links">
+<a href="#overview">Overview</a><a href="#background">Background</a><a href="#system">System description</a><a href="#dataset">Dataset description</a><a href="#statistics">Statistics</a><a href="#video">Video</a><a href="#download">Download</a><a href="#faq">FAQ</a></div></nav>
+<section class="ds-document-section" id="overview"><h3 class="wp-block-heading">Overview</h3>
+<p>Manual work remains essential in industrial production because workers can adapt quickly to new tools, tasks and environments. Unlike automated production steps, however, manual assembly is difficult to monitor and document continuously. The Tool Tracking system addresses this challenge by attaching sensor modules to existing hand-held tools and using machine-learning methods to recognize performed operations. This can provide immediate feedback to workers and help close gaps in process quality assurance.</p>
+<div class="ds-fact-grid"><div class="ds-fact"><span class="ds-fact-label">Tool types</span><span class="ds-fact-value">4</span></div><div class="ds-fact"><span class="ds-fact-label">Raw data per tool</span><span class="ds-fact-value">30–60 min</span></div><div class="ds-fact"><span class="ds-fact-label">Instances per action</span><span class="ds-fact-value">~100–200</span></div><div class="ds-fact"><span class="ds-fact-label">Total data</span><span class="ds-fact-value">984 MB</span></div></div>
+</section>
+<section class="ds-document-section" id="background"><h3 class="wp-block-heading">Background</h3>
+<p>Many high-volume or safety-critical production operations are fully automated because this makes reproducible quality control possible. For less critical tasks such as mounting covers or other components, flexible manual labor is often more economical than extensive automation. Operators can quickly learn new procedures and handle a broad variety of tools, but their actions may not always follow the intended sequence. Quality checks based on a second person, an additional acceptance test, or a camera system can be costly.</p>
+<p>To combine the flexibility of manual work with the traceability of automated production, hand-held tools can be instrumented and their activities classified while the worker performs them. The approach must cope with different tools and configurations, changing working environments, and processes that are not known in advance.</p>
+<figure class="ds-document-figure ds-tool-photo ds-tool-photo-portrait"><img alt="Industrial assembly worker using a screwdriver in a mounting process" loading="lazy" src="images/Unbenannt-2.png"/><figcaption><center>Using a screwdriver in a mounting process. Image: Fraunhofer IIS.</center></figcaption></figure>
+</section>
+<section class="ds-document-section" id="system"><h3 class="wp-block-heading">System description</h3>
+<p>The Tool Tracking system uses a machine-learning-based approach to analyze manual operations with existing tools. It combines accelerometer and gyroscope measurements with a magnetic-field sensor and a microphone. An automated machine-learning pipeline supports data acquisition for new tasks, model training, and deployment of the resulting classifier on the target sensor module.</p>
+<p>A sensor unit can be mounted on a tool using a detachable fixture. Optionally, optical or radio-based positioning can be added where a task requires spatial information. The sensor unit and the worker-facing user interface communicate wirelessly with a back-end server. The server hosts containerized services and a database, while a browser-based interface (for example, on a tablet) presents feedback to the worker.</p>
+<div class="ds-tool-image-grid">
+<figure class="ds-document-figure ds-tool-photo"><img alt="Sensor unit mounted in a hot-plug fixture on a pneumatic tool" loading="lazy" src="images/Unbenannt2-4.png"/><figcaption><center>Sensor modules attach to a hot-plug rack on the tool. Image: Fraunhofer IIS.</center></figcaption></figure>
+<figure class="ds-document-figure ds-tool-photo"><img alt="Sensor enclosure and exposed electronics used for tool monitoring" loading="lazy" src="images/IntWerkzeuge04-2.jpg"/><figcaption><center>The sensor modules are based on off-the-shelf components. Image: Fraunhofer IIS.</center></figcaption></figure>
+<figure class="ds-document-figure ds-tool-photo"><img alt="Riveter, pneumatic screwdriver and electric screwdriver on a work surface" loading="lazy" src="images/20190326_134337b-scaled.jpg"/><figcaption><center>Examples of the hand-held tools used for data acquisition: riveter, pneumatic screwdriver and electric screwdriver. Image: Fraunhofer IIS.</center></figcaption></figure>
+</div>
+</section>
+<section class="ds-document-section" id="dataset"><h3 class="wp-block-heading">Dataset description</h3>
+<p>Measurements were collected with four different tool types:</p>
+<ul><li>Electric screwdriver</li><li>Pneumatic screwdriver</li><li>Pneumatic riveting gun</li><li>Torque wrench</li></ul>
+<p>Each tool was recorded with a gyroscope, accelerometer, magnetic-field sensor and microphone, at sensor-dependent sampling rates. The tools differ considerably in the duration and characteristics of their action signals, the most informative sensor and the structure of individual events.</p>
+<p>With an <strong>electric screwdriver</strong>, motor operation produces a magnetic-field response until the target torque is reached and the motor stops. A <strong>pneumatic screwdriver</strong>, by comparison, disengages its drive and continues spinning down. A <strong>pneumatic riveting gun</strong> performs short, abrupt actions with little preceding activity. A <strong>torque wrench</strong> produces a longer preparatory motion through its release mechanism, ending in a mechanical click.</p>
+<figure class="ds-document-figure ds-tool-plot" style="width: 550px; max-width: 100%; margin: 12px auto 21px;"><img alt="Magnetic-field and gyroscope time series during a detected screwdriver action" loading="lazy" src="images/detected_action_w_scale.png"/><figcaption><center>Magnetic-field and gyroscope readings from an electric screwdriver. The highlighted tightening action shows the motor-induced magnetic-field signal and a gyroscope peak when the torque is reached. Image: Fraunhofer IIS.</center></figcaption></figure>
+<p>Between <strong>30 and 60 minutes</strong> of raw recordings were collected for each tool, generally including roughly <strong>100–200 examples per action type</strong>. Besides operations such as tightening, untightening and riveting, the data also contains atypical events: shaking a tool, setting it down hard, changing its nose piece or manually rotating its motor.</p>
+</section>
+<section class="ds-document-section" id="statistics"><h3 class="wp-block-heading">Example statistics</h3>
+<p>Example recordings for an electric screwdriver have a total duration of <strong>52.0 minutes</strong>. The following counts and durations describe the annotated action classes.</p>
+<div class="ds-tool-table-scroll"><table class="ds-tool-table"><thead><tr><th>Class</th><th>Count</th><th>Mean duration [s]</th><th>Total duration [s]</th></tr></thead><tbody>
+<tr><td>garbage</td><td>25</td><td>0.11</td><td>2.66</td></tr>
+<tr><td>undefined</td><td>924</td><td>2.15</td><td>1982.71</td></tr>
+<tr><td>tightening</td><td>199</td><td>1.21</td><td>240.05</td></tr>
+<tr><td>untightening</td><td>197</td><td>0.73</td><td>143.84</td></tr>
+<tr><td>motor_activity_cw</td><td>147</td><td>1.68</td><td>246.7</td></tr>
+<tr><td>motor_activity_ccw</td><td>145</td><td>1.75</td><td>253.85</td></tr>
+<tr><td>manual_motor_rotation</td><td>190</td><td>0.51</td><td>97.7</td></tr>
+<tr><td>shaking</td><td>61</td><td>1.18</td><td>72.06</td></tr>
+</tbody></table></div>
+<h4>Mean sensor sampling rates</h4>
+<div class="ds-tool-table-scroll"><table class="ds-tool-table"><thead><tr><th>Sensor</th><th>Mean sampling rate [Hz]</th></tr></thead><tbody><tr><td>Accelerometer and gyroscope</td><td>102.292</td></tr><tr><td>Magnetic-field sensor</td><td>154.646</td></tr><tr><td>Microphone</td><td>Not specified</td></tr></tbody></table></div>
+<p class="ds-tool-small-note">The reference table does not specify a mean sampling rate for the microphone.</p>
+</section>
+<section class="ds-document-section" id="video"><h3 class="wp-block-heading">System demonstration</h3>
+<p>The video <em>Cognitive handheld tools</em> demonstrates the monitored tool workflow and feedback for manual assembly operations.</p>
+<div class="ds-tool-video"><iframe allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen="" loading="lazy" referrerpolicy="strict-origin-when-cross-origin" src="https://www.youtube-nocookie.com/embed/MCpC2i-ZbDs" title="Cognitive handheld tools – Tool Tracking demonstration"></iframe></div>
+<p><a href="https://www.youtube.com/watch?v=MCpC2i-ZbDs" rel="noopener noreferrer" target="_blank"><center>Watch the demonstration on YouTube ↗</center></a></p>
+</section>
+<section class="ds-document-section" id="download"><h3 class="wp-block-heading">Download and code</h3>
+<p>The dataset, accompanying descriptions and data loaders are provided through the project's GitHub repository. The data archives themselves are not stored on this GitHub Pages website.</p>
+<ul class="ds-download-list"><li><span><strong>Tool Tracking dataset and code</strong><small>GitHub repository with the dataset's accompanying material and loader code</small></span><a href="https://github.com/mutschcr/tool-tracking" rel="noopener noreferrer" target="_blank">Open repository ↗</a></li></ul>
+</section>
+<section class="ds-document-section" id="faq"><h3 class="wp-block-heading">Frequently asked questions</h3><p>No questions so far.</p></section>
+</div></article>
+</main></div></div></div>
+</div>
+</body></html>

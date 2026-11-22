@@ -1,0 +1,594 @@
+/* MLPS Lab dataset catalogue and detail pages.
+   Intentionally scoped: no impact on other pages of the website.
+   Existing MLPS global branding is reused (lime #1df900, black, white). */
+
+body.mlps-datasets {
+  --ds-accent: var(--mlps-accent, #1df900);
+  --ds-ink: #171b1e;
+  --ds-muted: #5e6973;
+  --ds-line: #dfe4e7;
+  --ds-pale: #f4f6f6;
+  --ds-tint: #f3ffe9;
+  --ds-radius: 13px;
+}
+/* Headings, body text, page width and the gap below the navigation are
+   deliberately controlled by the site's shared assets/css/style.css.
+   Do not give .ds-page or .entry-content their own top padding, maximum
+   width, or blanket h1/h2/h3/p typography overrides here. */
+body.mlps-datasets .ds-page *,
+body.mlps-datasets .ds-page *::before,
+body.mlps-datasets .ds-page *::after { box-sizing: border-box; }
+body.mlps-datasets .ds-page a { text-underline-offset: 3px; }
+body.mlps-datasets .ds-page a:focus-visible,
+body.mlps-datasets .ds-page button:focus-visible,
+body.mlps-datasets .ds-page input:focus-visible { outline: 3px solid #76bb00; outline-offset: 3px; }
+body.mlps-datasets .ds-page [hidden] { display: none !important; }
+
+/* The header and logo use the standard site stylesheet unchanged. */
+
+.ds-breadcrumbs { display: flex; flex-wrap: wrap; gap: 9px; align-items: center; font-size: .78rem; color: #7a838a; margin-bottom: 23px; }
+body.mlps-datasets .entry-content .ds-breadcrumbs a { color: #606a72 !important; text-decoration: none; }
+body.mlps-datasets .entry-content .ds-breadcrumbs a:hover { color: #000 !important; text-decoration: underline; text-decoration-color: var(--ds-accent); }
+.ds-breadcrumbs .ds-sep { color: #a6adb2; }
+.ds-eyebrow { display: inline-flex; align-items: center; gap: 8px; color: #263622; text-transform: uppercase; letter-spacing: .13em; font-size: .72rem; font-weight: 800; margin-bottom: 13px; }
+.ds-eyebrow::before { content: ''; height: 9px; width: 9px; background: var(--ds-accent); border-radius: 2px; }
+
+/* The overview title is an actual h2 with the same wp-block-heading class
+   used by the other main pages. The IPIN heading is the next heading level.
+   Only layout spacing is defined here; font styling comes from style.css. */
+.ds-overview .ds-intro { margin-bottom: 24px; }
+.ds-overview .ds-lead { max-width: none; margin-bottom: 0; font-size: .92em; }
+@media (min-width: 1280px) {
+  .ds-overview .ds-lead { white-space: nowrap; }
+}
+.ds-overview #ipin-competitions, .ds-overview #miscellaneous-datasets { margin-top: 36px; }
+.ds-overview .ds-section-head > :is(h2,h3) { margin: 0; }
+
+/* Sections and main dataset cards. */
+.ds-section { border-top: 1px solid #dae1e3; padding-top: 23px; margin-top: 26px; }
+.ds-section-head { display: flex; align-items: baseline; justify-content: space-between; gap: 15px; margin-bottom: 18px; }
+.ds-section-head p { font-size: .86rem; }
+.ds-grid { display: grid; grid-template-columns: repeat(3, minmax(0,1fr)); gap: 23px; align-items: stretch; }
+.ds-card { display: flex; flex-direction: column; min-width: 0; background: #fff; border: 1px solid #dce3e6; border-radius: 11px; overflow: hidden; box-shadow: 0 2px 7px rgba(25,39,38,.025); transition: transform .2s ease, box-shadow .2s ease, border-color .2s ease; }
+.ds-card:hover { transform: translateY(-4px); border-color: #a8caa0; box-shadow: 0 11px 25px rgba(22,39,26,.1); }
+body.mlps-datasets .ds-page .ds-card-image { display: block; aspect-ratio: 16/7.2; overflow: hidden; background: #eaf0ed; border-bottom: 1px solid #e7ecee; text-decoration: none !important; }
+.ds-card-image .ds-photo-object, .ds-card-image img { display: block; width: 100%; height: 100%; object-fit: cover; margin: 0 !important; transition: transform .25s ease; }
+.ds-card:hover .ds-card-image :is(.ds-photo-object,.ds-type-image) { transform: scale(1.015); }
+.ds-card-main { display: flex; flex-direction: column; gap: 11px; padding: 19px 18px 17px; flex: 1; }
+.ds-card-main h3 { font-size: 1.17rem; line-height: 1.27; margin: 0; }
+.ds-card-main p { margin: 0; }
+body.mlps-datasets .entry-content .ds-card-title-link { color: var(--ds-ink) !important; text-decoration: none !important; }
+body.mlps-datasets .entry-content .ds-card-title-link:hover { text-decoration: underline !important; text-decoration-color: var(--ds-accent) !important; text-decoration-thickness: 3px !important; }
+.ds-card-description { font-size: .88rem; line-height: 1.48 !important; min-height: 58px; }
+.ds-meta { display: flex; flex-direction: column; gap: 6px; margin: 2px 0 0; }
+.ds-meta-item { display: flex; align-items: center; width: fit-content; gap: 7px; color: #38464a; background: #f2f5f5; border-radius: 35px; padding: 4px 9px; font-size: .735rem; line-height: 1.24; }
+.ds-meta-item svg { flex: 0 0 13px; width: 13px; height: 13px; stroke: #40515a; fill: none; stroke-width: 1.8; }
+.ds-card-actions { display: flex; justify-content: flex-end; align-items: center; gap: 9px; margin-top: auto; padding-top: 8px; }
+body.mlps-datasets .entry-content .ds-btn { min-height: 39px; display: inline-flex; justify-content: center; align-items: center; gap: 8px; border: 1px solid #d4dade; border-radius: 7px; padding: 9px 13px; color: #161a1b !important; background: white; text-decoration: none !important; font-size: .83rem; font-weight: 730; line-height: 1.2; text-align: center; transition: background-color .16s,border-color .16s,transform .16s; white-space: nowrap; cursor: pointer; }
+body.mlps-datasets .entry-content .ds-btn:hover { border-color: #7ed457; background: #f7fff1; transform: translateY(-1px); }
+body.mlps-datasets .entry-content .ds-btn-primary { background: var(--ds-accent); border-color: var(--ds-accent); color: #070a06 !important; }
+body.mlps-datasets .entry-content .ds-btn-primary:hover { background: #b8ff52; border-color: #a2e43d; }
+.ds-card-actions .ds-btn { flex: 0 0 auto; min-width: 132px; }
+.ds-btn svg { width: 15px; height: 15px; stroke: currentColor; stroke-width: 2; fill: none; flex: 0 0 15px; }
+
+/* One full-width feature for the IPIN benchmark collection. Only this
+   component has custom styling; heading typography stays with style.css. */
+.ds-ipin-feature {
+  overflow: hidden;
+  background: #fff;
+  border: 1px solid #dce3e6;
+  border-radius: 11px;
+  box-shadow: 0 2px 7px rgba(25, 39, 38, .035);
+}
+.ds-ipin-feature-media {
+  width: 100%;
+  height: clamp(170px, 20vw, 245px);
+  background: #e8eeeb;
+  overflow: hidden;
+}
+.ds-ipin-feature-photo {
+  display: block;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center 52%;
+  margin: 0 !important;
+}
+.ds-ipin-feature-body {
+  padding: 22px 24px 24px;
+}
+.ds-ipin-feature-body h3 {
+  margin-top: 0;
+  margin-bottom: 12px;
+}
+.ds-ipin-feature-body > p {
+  max-width: 1020px;
+  margin: 0 0 20px;
+  font-size: .93rem;
+  line-height: 1.55;
+}
+.ds-ipin-years {
+  display: grid;
+  grid-template-columns: repeat(6, minmax(0, 1fr));
+  gap: 9px;
+  margin-top: 6px;
+}
+/* IPIN year links use the same .ds-btn.ds-btn-primary color and hover
+   behavior as the other dataset cards. This rule controls layout only. */
+body.mlps-datasets .entry-content a.ds-ipin-year {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 4px;
+  min-width: 0;
+  min-height: 88px;
+  padding: 12px 11px;
+  white-space: normal;
+  text-align: left;
+}
+.ds-ipin-year strong {
+  font-size: .91rem;
+  font-weight: 800;
+  line-height: 1.1;
+}
+.ds-ipin-year .ds-ipin-type,
+.ds-ipin-year .ds-ipin-note {
+  display: block;
+  font-weight: 400;
+  line-height: 1.25;
+  color: inherit;
+}
+.ds-ipin-year .ds-ipin-type {
+  font-size: .76rem;
+  white-space: nowrap;
+}
+.ds-ipin-year .ds-ipin-note {
+  font-size: .71rem;
+}
+.ds-ipin-feature-links {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px 25px;
+  justify-content: flex-end;
+  align-items: center;
+  margin-top: 19px;
+}
+body.mlps-datasets .entry-content .ds-ipin-feature-links a {
+  color: #237817 !important;
+  font-size: .85rem;
+  font-weight: 650;
+  text-decoration: underline;
+  text-decoration-color: #96cc81;
+  text-underline-offset: 3px;
+}
+body.mlps-datasets .entry-content .ds-ipin-feature-links a:hover {
+  color: #10460b !important;
+  text-decoration-color: #10460b;
+}
+
+@media (max-width: 1120px) {
+
+  .ds-ipin-years { grid-template-columns: repeat(3, minmax(0,1fr)); }
+}
+@media (max-width: 900px) {
+  .ds-grid { grid-template-columns: repeat(2,minmax(0,1fr)); }
+}
+@media (max-width: 650px) {
+  .ds-grid { grid-template-columns: 1fr; }
+  .ds-card-image { aspect-ratio: 16/6 !important; }
+  .ds-card-description { min-height: unset; }
+  .ds-ipin-years { grid-template-columns: repeat(2, minmax(0,1fr)); }
+  .ds-ipin-feature-body { padding: 18px 16px 20px; }
+  .ds-ipin-feature-links { justify-content: flex-start; }
+}
+@media (prefers-reduced-motion: reduce) {
+  .ds-card,.ds-ipin-year,.ds-btn,.ds-card-image .ds-photo-object,.ds-card-image .ds-type-image { transition: none !important; transform: none !important; }
+}
+
+/* Dataset photographs: central path takes precedence; <object> retains the
+   original repository image as a native HTML fallback until migration. */
+.ds-photo-object { display:block; width:100%; height:100%; object-fit:cover; object-position:center; border:0; overflow:hidden; }
+.ds-card-image .ds-photo-object { pointer-events:none; }
+.ds-photo-object > img { display:block; width:100%; height:100%; object-fit:cover; object-position:center; border:0; }
+.ds-doc-gallery .ds-photo-object > img { border:0; border-radius:0; }
+/* No invented pictures: an informative, purely typographic panel is used when
+   no clearly attributable real image exists in the current repository. */
+.ds-type-image { display:flex !important; width:100%; height:100%; min-height:140px; flex-direction:column; justify-content:center; align-items:flex-start; gap:7px; padding:24px 26px; background:#eef5ed; background-image:linear-gradient(130deg,#eef5ed,#f9fcf7); border-bottom:4px solid var(--ds-accent); text-align:left; transform-origin:center; transition:transform .25s ease; }
+.ds-type-kicker { font-weight:800; letter-spacing:.14em; color:#467441; font-size:.68rem; }
+.ds-type-name { color:#17241b; font-weight:800; font-size:clamp(1.7rem,3vw,2.35rem); letter-spacing:-.035em; line-height:1.05; }
+.ds-type-subtitle { color:#506558; font-size:.81rem; font-weight:600; }
+.ds-hero-image .ds-type-image { min-height:245px; }
+.ds-card-image .ds-type-image { min-height:0; }
+@media (max-width:650px) { .ds-type-image { padding:20px; } }
+
+
+/* Documentation pages: native site typography and same first-heading markup
+   as the Datasets overview. Only component layout—not heading sizes or top
+   spacing—is customised here. */
+.ds-document-lead { color:#495450; margin: 0 0 20px; }
+.ds-document-figure { margin: 12px 0 21px; max-width:100%; }
+.ds-document-figure img { display:block; max-width:100%; width:100%; max-height:360px; object-fit:contain; object-position:center; background:#f4f7f4; border:1px solid #e2e7e1; border-radius:8px; }
+.ds-document-figure figcaption { color:#58615c; margin-top:7px; font-size:.84rem; line-height:1.45; }
+.ds-document-facts { display:grid; grid-template-columns: repeat(3,minmax(0,1fr)); gap:9px 17px; margin: 18px 0 26px; padding:14px 18px; background:#f8faf7; border:1px solid #e4e9e2; border-radius:8px; }
+.ds-document-facts > div { min-width:0; }
+.ds-document-facts dt { font-size:.78rem; color:#687269; font-weight:500; }
+.ds-document-facts dd { margin:3px 0 0; overflow-wrap:anywhere; font-size:.9rem; font-weight:650; }
+.ds-document-section { margin: 22px 0 0; padding-top:20px; border-top:1px solid #e5e8e6; scroll-margin-top:90px; }
+.ds-document-section > .wp-block-heading { margin:0 0 13px; }
+.ds-document-section p { margin: 0 0 15px; }
+.ds-document-section li { margin-bottom:6px; }
+.ds-document-section h4 { margin: 22px 0 8px; font-weight:700; }
+.ds-document-code { background:#f6f8f6; border:1px solid #e1e7e2; border-radius:7px; padding:13px 16px; overflow-x:auto; font-size:.87rem; line-height:1.5; white-space:pre-wrap; overflow-wrap:anywhere; }
+.ds-document-qa { padding: 12px 0; border-top:1px solid #e8ede8; }
+.ds-document-qa h4 { margin: 0 0 7px; font-weight:700; }
+.ds-document-qa p { margin:0; }
+.ds-document-photo-grid { display:grid; grid-template-columns:repeat(3,minmax(0,1fr)); gap:14px; margin:18px 0; }
+.ds-document-photo-grid figure { margin:0; }
+.ds-document-photo-grid img { height:145px; object-fit:cover; }
+.ds-document-scenarios { display:grid; grid-template-columns:repeat(3,minmax(0,1fr)); gap:13px; margin:18px 0; }
+.ds-document-scenario { padding:14px 15px; border:1px solid #e3e8e3; background:#fafbfa; border-radius:8px; }
+.ds-document-scenario strong { display:block; font-size:.9rem; margin-bottom:7px; }
+.ds-document-scenario p { font-size:.84rem; color:#626d64; margin:0; }
+.ds-document-table-scroll { max-width:100%; overflow-x:auto; margin:18px 0; }
+.ds-document-data-table { border-collapse:collapse; width:100%; font-size:.87rem; }
+.ds-document-data-table th { background:#eef3ee; text-align:left; }
+.ds-document-data-table th,.ds-document-data-table td { border:1px solid #dce5dc; padding:10px 12px; vertical-align:top; }
+.ds-document-data-table a { white-space:nowrap; }
+.ds-document-citation { border-left:3px solid #1df900; background:#f7faf6; padding:14px 17px; line-height:1.6; }
+.ds-document-related { padding-left:22px; }
+.ds-document-subject { display:flex; align-items:center; min-height:90px; padding:20px 22px; border-left:4px solid #1df900; background:#f1f6f0; color:#27372a; margin: 12px 0 18px; font-weight:650; }
+.ds-document #fraunhofer-iis { margin-top:30px; }
+.ds-document .ds-doc-gallery { display:grid; grid-template-columns:repeat(3,minmax(0,1fr)); gap:12px; margin:15px 0; }
+.ds-document .ds-doc-gallery .ds-photo-object { width:100%; min-height:140px; max-height:190px; object-fit:cover; border:1px solid #e2e7e1; border-radius:8px; overflow:hidden; }
+.ds-document .ds-fact-grid { display:grid; grid-template-columns: repeat(4,minmax(0,1fr)); gap:10px; margin:15px 0; }
+.ds-document .ds-fact { padding:11px 13px; border:1px solid #e2e6e2; background:#f8faf7; border-radius:7px; }
+.ds-document .ds-fact-label { color:#606b62; display:block; font-size:.76rem; }
+.ds-document .ds-fact-value { display:block; font-weight:650; font-size:.87rem; }
+.ds-document .ds-download-list { padding:0; list-style:none; margin:14px 0; border:1px solid #dce5dc; border-radius:7px; overflow:hidden; }
+.ds-document .ds-download-list li { display:flex; justify-content:space-between; align-items:center; gap:16px; border-bottom:1px solid #e2e8e2; padding:10px 14px; }
+.ds-document .ds-download-list li:last-child { border-bottom:0; }
+.ds-document .ds-download-list small { display:block; color:#5e6c61; }
+.ds-document .ds-download-list a { white-space:nowrap; }
+.ds-document .ds-download-list a svg { width:14px; height:14px; vertical-align:middle; fill:none; stroke:currentColor; }
+.ds-document .ds-citation-block pre { white-space:pre-wrap; overflow-wrap:anywhere; }
+@media(max-width:800px){
+ .ds-document-facts,.ds-document-scenarios,.ds-document-photo-grid { grid-template-columns:repeat(2,minmax(0,1fr)); }
+ .ds-document .ds-fact-grid {grid-template-columns:repeat(2,minmax(0,1fr));}
+}
+@media(max-width:540px){
+ .ds-document-facts,.ds-document-scenarios,.ds-document-photo-grid { grid-template-columns:1fr; }
+ .ds-document-photo-grid img {height:auto;}
+ .ds-document .ds-doc-gallery {grid-template-columns:1fr 1fr;}
+ .ds-document .ds-download-list li {align-items:flex-start;flex-direction:column;}
+}
+
+.ds-document-media-object { width:100%; max-width:100%; display:block; margin:0; }
+.ds-document-figure .ds-document-media-object img { width:100%; max-height:360px; object-fit:contain; }
+
+
+/* =============================================================
+   Detail page presentation (v16): restore the original framed
+   three-column dataset intro, keeping site typography and content.
+   ============================================================= */
+.ds-document .ds-document-hero {
+  display: grid;
+  grid-template-columns: minmax(0,1.06fr) minmax(0,.94fr) minmax(235px,.83fr);
+  gap: 19px;
+  align-items: stretch;
+  margin: 20px 0 21px;
+}
+.ds-document .ds-hero-image {
+  min-width: 0;
+  min-height: 249px;
+  background: #eef3ee;
+  border: 1px solid #dce4de;
+  border-radius: 10px;
+  overflow: hidden;
+}
+.ds-document .ds-hero-figure {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  height: 100%;
+  margin: 0;
+}
+.ds-document .ds-hero-figure img {
+  display: block;
+  width: 100%;
+  flex: 1;
+  min-height: 215px;
+  max-height: 266px;
+  object-fit: cover;
+  object-position: center;
+  margin: 0;
+}
+.ds-document .ds-hero-figure figcaption {
+  padding: 6px 10px;
+  background: #f6f9f6;
+  border-top: 1px solid #e5ebe6;
+  color: #69746d;
+  font-size: .72rem;
+  line-height: 1.3;
+}
+.ds-document .ds-hero-image .ds-type-image {
+  min-height: 249px;
+  height: 100%;
+  padding: 25px;
+  justify-content: center;
+}
+.ds-document .ds-hero-image .ds-type-name {
+  font-size: clamp(1.75rem,2.5vw,2.15rem);
+  letter-spacing: -.025em;
+}
+.ds-document .ds-hero-content {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 12px;
+  min-width: 0;
+  padding: 5px 0;
+}
+.ds-document .ds-hero-kicker {
+  color: #4c7c44;
+  font-size: .71rem;
+  font-weight: 800;
+  letter-spacing: .1em;
+}
+.ds-document .ds-hero-summary {
+  margin: 0;
+  font-size: .93rem;
+  line-height: 1.58;
+  color: #3c4941;
+}
+.ds-document .ds-tags {
+  display: flex;
+  gap: 7px;
+  flex-wrap: wrap;
+  align-items: flex-start;
+}
+.ds-document .ds-tag {
+  display: inline-flex;
+  padding: 5px 9px;
+  border: 1px solid #d8ecd3;
+  border-radius: 999px;
+  background: #f0fbed;
+  color: #326e29;
+  font-size: .73rem;
+  font-weight: 630;
+  line-height: 1.3;
+}
+.ds-document .ds-hero-actions { margin-top: auto; padding-top: 5px; }
+.ds-document .ds-spec-panel {
+  min-width: 0;
+  padding: 16px 17px;
+  border: 1px solid #dbe5dc;
+  border-top: 3px solid var(--ds-accent);
+  border-radius: 10px;
+  background: #f8faf8;
+}
+.ds-document .ds-spec-panel h3 {
+  font-size: .99rem;
+  line-height: 1.4;
+  margin: 0 0 12px;
+  font-weight: 750;
+}
+.ds-document .ds-spec-list {
+  padding: 0;
+  margin: 0;
+}
+.ds-document .ds-spec-list > div {
+  display: grid;
+  grid-template-columns: minmax(66px,.55fr) minmax(0,1fr);
+  gap: 9px;
+  padding: 9px 0;
+  border-top: 1px solid #e3e9e4;
+  font-size: .79rem;
+  line-height: 1.45;
+}
+.ds-document .ds-spec-list dt { font-weight: 700; color: #24342b; }
+.ds-document .ds-spec-list dd { margin: 0; color: #46544b; overflow-wrap: anywhere; }
+.ds-document .ds-document-toc {
+  display: flex;
+  gap: 15px 23px;
+  align-items: baseline;
+  flex-wrap: wrap;
+  margin: 18px 0 12px;
+  padding: 0 0 12px;
+  border-bottom: 1px solid #dde6df;
+}
+.ds-document .ds-document-toc-label {
+  color: #68786c;
+  letter-spacing: .09em;
+  font-size: .68rem;
+  font-weight: 800;
+  flex: 0 0 auto;
+}
+.ds-document .ds-document-toc-links {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 9px 20px;
+}
+body.mlps-datasets .ds-document .ds-document-toc-links a {
+  color: #43574b !important;
+  font-size: .82rem;
+  font-weight: 650;
+  text-decoration: none !important;
+  border-bottom: 2px solid transparent;
+  padding-bottom: 3px;
+}
+body.mlps-datasets .ds-document .ds-document-toc-links a:hover {
+  color: #1c351d !important;
+  border-bottom-color: var(--ds-accent);
+}
+.ds-document .ds-document-section {
+  scroll-margin-top: 95px;
+  margin: 24px 0 0;
+  padding-top: 22px;
+  border-top: 1px solid #e4eae4;
+}
+.ds-document .ds-document-section > h3.wp-block-heading {
+  position: relative;
+  padding-left: 15px;
+  margin: 0 0 16px;
+}
+.ds-document .ds-document-section > h3.wp-block-heading::before {
+  content: '';
+  position: absolute;
+  top: .14em; left: 0;
+  width: 4px;
+  height: .88em;
+  border-radius: 3px;
+  background: var(--ds-accent);
+}
+/* Preserve the document's figure captions, FAQ, tables and scenario cards. */
+@media (max-width: 1080px) {
+  .ds-document .ds-document-hero {grid-template-columns: minmax(0,1.05fr) minmax(0,1fr);}
+  .ds-document .ds-spec-panel {grid-column: 1/-1;}
+  .ds-document .ds-spec-list {display: grid;grid-template-columns: repeat(2,minmax(0,1fr));column-gap: 28px;}
+}
+@media (max-width: 700px) {
+  .ds-document .ds-document-hero {grid-template-columns: minmax(0,1fr);gap: 14px;}
+  .ds-document .ds-hero-image {min-height: 212px;}
+  .ds-document .ds-hero-figure img {max-height: 250px; min-height: 200px;}
+  .ds-document .ds-spec-panel {grid-column: auto;}
+  .ds-document .ds-spec-list {display: block;}
+  .ds-document .ds-document-toc {gap: 8px;}
+  .ds-document .ds-document-toc-links {gap: 8px 15px;}
+}
+/* The navigation already has a divider: avoid a second line before the first section. */
+.ds-document .ds-document-toc + .ds-document-section {
+  margin-top: 16px;
+  padding-top: 0;
+  border-top: 0;
+}
+
+
+/* Warehouse dataset: aligned scenario cards and less-cropped overview photos. */
+.ds-document .ds-warehouse-scenarios {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 16px;
+  align-items: stretch;
+}
+.ds-document .ds-warehouse-scenarios > .ds-document-scenario,
+.ds-document .ds-warehouse-scenarios > .ds-document-scenario:first-child {
+  grid-column: auto;
+  min-width: 0;
+  display: grid;
+  grid-template-rows: 2.8em 4.3em auto;
+  align-content: start;
+  background: #fff;
+  padding: 15px;
+}
+.ds-document .ds-warehouse-scenarios > .ds-document-scenario > strong { display: block; margin: 0; line-height: 1.4; }
+.ds-document .ds-warehouse-scenarios > .ds-document-scenario > p { margin: 0; line-height: 1.45; }
+.ds-document .ds-warehouse-scenarios .ds-warehouse-scenario-figure,
+.ds-document .ds-warehouse-scenarios > .ds-document-scenario:first-child .ds-warehouse-scenario-figure {
+  width: 100%;
+  max-width: none;
+  margin: 0;
+}
+.ds-document .ds-warehouse-scenarios .ds-warehouse-scenario-figure img {
+  display: block;
+  width: 100%;
+  height: auto;
+  aspect-ratio: 4 / 3;
+  object-fit: contain;
+  background: #fff;
+}
+.ds-document .ds-warehouse-scenarios .ds-warehouse-scenario-figure figcaption {
+  margin-top: 9px;
+  min-height: 3em;
+}
+/* Restrict the taller photo strip to the Warehouse detail page. */
+.ds-document.ds-warehouse-page .ds-document-photo-grid img {
+  height: 205px;
+  max-height: none;
+  object-fit: cover;
+  object-position: center;
+}
+@media (max-width: 900px) {
+  .ds-document .ds-warehouse-scenarios { grid-template-columns: repeat(2, minmax(0, 1fr)); }
+}
+@media (max-width: 600px) {
+  .ds-document .ds-warehouse-scenarios { grid-template-columns: 1fr; }
+  .ds-document .ds-warehouse-scenarios > .ds-document-scenario { grid-template-rows: auto auto auto; row-gap: 10px; }
+  .ds-document.ds-warehouse-page .ds-document-photo-grid img { height: 235px; }
+}
+
+/* Tool Tracking: documentation-specific images and statistics */
+.ds-document .ds-tool-photo {max-width: 100%; margin: 15px 0 21px;}
+.ds-document .ds-tool-photo img {width:100%; max-height:360px; object-fit:contain; background:#fff;}
+.ds-document .ds-tool-photo-portrait {max-width:300px; margin-left:auto; margin-right:auto;}
+.ds-document .ds-tool-photo-portrait img {max-height:380px;}
+.ds-document .ds-tool-plot img {max-height:none;}
+.ds-document .ds-tool-image-grid {display:grid; grid-template-columns:repeat(2,minmax(0,1fr)); gap:18px; align-items:stretch;}
+.ds-document .ds-tool-image-grid .ds-tool-photo {display:flex; flex-direction:column; min-width:0;}
+.ds-document .ds-tool-image-grid .ds-tool-photo img {height:240px; object-fit:contain;}
+.ds-document .ds-tool-table-scroll {overflow-x:auto; margin:12px 0 20px;}
+.ds-document .ds-tool-table {width:100%; border-collapse:collapse; font-size:.91rem;}
+.ds-document .ds-tool-table th,.ds-document .ds-tool-table td {padding:9px 12px; border-bottom:1px solid #e0e5df; text-align:left;}
+.ds-document .ds-tool-table th {background:#f2f6f0; font-weight:700;}
+.ds-document .ds-tool-table td:not(:first-child),.ds-document .ds-tool-table th:not(:first-child) {font-variant-numeric:tabular-nums;}
+.ds-document .ds-tool-small-note {font-size:.86rem; color:#58615c;}
+.ds-document .ds-tool-video {width:100%; aspect-ratio:16/9; border-radius:9px; overflow:hidden; background:#101412;}
+.ds-document .ds-tool-video iframe {display:block; width:100%; height:100%; border:0;}
+@media(max-width:650px){.ds-document .ds-tool-image-grid {grid-template-columns:1fr;} .ds-document .ds-tool-image-grid .ds-tool-photo img {height:auto; max-height:300px;}}
+
+/* Tool Tracking: unframed photography and three illustrations side by side. */
+.ds-tool-tracking-page .ds-hero-image { border:0; border-radius:0; background:transparent; }
+.ds-tool-tracking-page .ds-tool-photo img,
+.ds-tool-tracking-page .ds-tool-plot img { border:0; border-radius:0; background:transparent; }
+.ds-tool-tracking-page .ds-tool-image-grid { grid-template-columns:repeat(3,minmax(0,1fr)); align-items:start; }
+.ds-tool-tracking-page .ds-tool-image-grid .ds-tool-photo img { height:230px; }
+@media (max-width:850px) and (min-width:651px) {
+  .ds-tool-tracking-page .ds-tool-image-grid {grid-template-columns:repeat(2,minmax(0,1fr));}
+}
+@media (max-width:650px) {
+  .ds-tool-tracking-page .ds-tool-image-grid {grid-template-columns:1fr;}
+  .ds-tool-tracking-page .ds-tool-image-grid .ds-tool-photo img {height:auto;max-height:300px;}
+}
+
+/* Tool Tracking: three unframed photos on one desktop row. */
+body.mlps-datasets .ds-document.ds-tool-tracking-page .ds-tool-image-grid {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 18px;
+  align-items: start;
+}
+body.mlps-datasets .ds-document.ds-tool-tracking-page .ds-tool-image-grid > figure {
+  min-width: 0;
+  width: 100%;
+  margin: 0;
+}
+body.mlps-datasets .ds-document.ds-tool-tracking-page figure.ds-document-figure,
+body.mlps-datasets .ds-document.ds-tool-tracking-page figure.ds-hero-figure,
+body.mlps-datasets .ds-document.ds-tool-tracking-page .ds-hero-image {
+  border: 0;
+  border-radius: 0;
+  box-shadow: none;
+  background: transparent;
+  padding: 0;
+}
+body.mlps-datasets .ds-document.ds-tool-tracking-page figure.ds-document-figure img,
+body.mlps-datasets .ds-document.ds-tool-tracking-page figure.ds-hero-figure img {
+  border: 0;
+  border-radius: 0;
+  box-shadow: none;
+  background: transparent;
+}
+body.mlps-datasets .ds-document.ds-tool-tracking-page .ds-tool-image-grid img {
+  width: 100%;
+  height: 235px;
+  max-height: none;
+  object-fit: contain;
+}
+@media (max-width: 700px) {
+  body.mlps-datasets .ds-document.ds-tool-tracking-page .ds-tool-image-grid {
+    grid-template-columns: 1fr;
+  }
+  body.mlps-datasets .ds-document.ds-tool-tracking-page .ds-tool-image-grid img {
+    height: auto;
+    max-height: 300px;
+  }
+}
