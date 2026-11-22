@@ -339,13 +339,21 @@
 }
 
 
+.thesis-toolbar {
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  gap: 1rem;
+  margin: 1.5rem 0;
+}
 .thesis-status, .thesis-pages {
   display: flex;
   flex-wrap: wrap;
   gap: .5rem;
-  margin: 1.5rem 0;
+  margin: 0;
   border: 0;
 }
+.thesis-pages { justify-content: flex-end; margin-left: auto; }
 .thesis-status a, .thesis-pages a {
   display: inline-block;
   padding: .45rem .85rem;
@@ -363,6 +371,11 @@
   outline-offset: 2px;
 }
 .mlps-thesis-list img.thesis-placeholder { object-fit: contain; }
+
+@media (max-width: 700px) {
+  .thesis-toolbar { align-items: stretch; flex-direction: column; }
+  .thesis-pages { justify-content: flex-start; margin-left: 0; }
+}
 
 .mlps-thesis-callout h2 { margin: 0; font-size: 2rem; line-height: 1.15; }
 .mlps-thesis-callout p { margin: .2em 0 0; }

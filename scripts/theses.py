@@ -105,7 +105,7 @@ def catalog(topics, state, rows, page, total):
             current = ' aria-current="page"' if n == page else ""
             numbers.append(f'<a href="{overview_name(state, n)}"{current} aria-label="Page {n}">{n}</a>')
         pager = '<nav class="thesis-pages" aria-label="Finished topics pages">' + " ".join(numbers) + "</nav>"
-    return nav + '<section class="mlps-thesis-list">' + content + "</section>" + pager
+    return '<div class="thesis-toolbar">' + nav + pager + '</div>' + '<section class="mlps-thesis-list">' + content + "</section>"
 
 
 def main():
